@@ -1,0 +1,62 @@
+.nav-link{
+    font-size: 15px;
+    color: black !important;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+
+.nav-link:hover{
+color: #3d3935 !important;
+    }
+
+    nav{
+       box-shadow: 0 2px 4px 0 rgba(0,0,0,.2) !important;
+            }
+
+    .navbar-btn{
+        margin-right: 10px;
+    }
+
+    .btn-sm.round {
+        border-radius: 24px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .btn-primary__singIn{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        border-color: black;
+        
+    }
+
+    .btn-primary__singIn:hover{
+        background-color: #edebe9;
+        border-color: black;
+        color: black;
+    }
+
+    .btn-primary__joinNow{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        border-color: black;
+        
+    }
+
+    .btn-primary__joinNow:hover{
+        background-color: #3d3935;
+        border-color: black;
+        color: white;
+    }
+
+    .navbar-brand__cart{
+       margin-right: 1rem !important; 
+    }
+
+  
