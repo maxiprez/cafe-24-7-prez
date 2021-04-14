@@ -21,9 +21,11 @@ function Navbar() {
   <div className="collapse navbar-collapse text-md-right text-center" id="collapsibleNavbar">
 
     <ul className="navbar-nav ">
-      <li className="nav-item"><a className="nav-link" href="#">Café</a></li>
-      <li className="nav-item"><a className="nav-link" href="#">Gift cards</a></li>
+      <li className="nav-item"><a className="nav-link" href="#">Tienda</a></li>
+      <li className="nav-item"><a className="nav-link" href="#">Empresa</a></li>
       <li className="nav-item"><a className="nav-link" href="#">Nosotros</a></li>
+      <li className="nav-item"><a className="nav-link" href="#">Servicios</a></li>
+      <li className="nav-item"><a className="nav-link" href="#">Contacto</a></li>
     </ul>
   
   </div>

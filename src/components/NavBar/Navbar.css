@@ -1,18 +1,46 @@
-.nav-link{
-    font-size: 15px;
-    color: black !important;
+.nav-item{
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    
+    color: red !important;
+    font-family: 'Halant', serif;
 }
 
-.nav-link:hover{
-color: #3d3935 !important;
+.navbar .navbar-nav .nav-link:hover {
+    color: #5d5b5b;
+  }
+  @media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0.7em;
     }
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.7em;
+    }
+  }
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000000;
+    color: transparent;
+    width: 0%;
+    content: '';
+    height: 3px;
+    transition: all 0.5s;
+  }
+  .navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+
 
     nav{
-       box-shadow: 0 2px 4px 0 rgba(0,0,0,.2) !important;
+       box-shadow: 0 10px 10px 0 rgba(0,0,0,.2) !important;
             }
 
     .navbar-btn{
