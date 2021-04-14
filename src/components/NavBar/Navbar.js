@@ -1,21 +1,18 @@
 import React from 'react';
 import './Navbar.css';
-import logo from './24_7cafe-logo.png';
-import cart from './cart.svg';
+import CartWidget from '../CartWidget/CartWidget';
+import Logo from '../Logo/Logo';
 
 
-
- function Navbar() {
+function Navbar() {
     return (
 
-<nav className="navbar navbar-expand-lg navbar-light bg-light ">
+<nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
-        <img src={logo} alt="logo..." style={{width:"4.2rem"}}></img>
-    </a>
-    <a className="navbar-brand mr-4 navbar-brand__cart align-middle ml-auto mr-3 order-lg-last" href="#">
-   <img src={cart} alt="cart..." style={{width:"2rem"}}></img>
-   </a>
+   
+   <Logo />
+
+    <CartWidget />
    
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span className="navbar-toggler-icon"></span>

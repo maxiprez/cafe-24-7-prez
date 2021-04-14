@@ -1,0 +1,65 @@
+body, html {
+  
+}
+
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('hero-image.jpg');
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+   
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+        .hero-box{
+            display: flex;
+            padding-top: 200px;
+            color: #ffffff;
+        }
+        
+        .hero-box .left-side{
+            width: 40%;
+            padding: 20px;
+        }
+        
+        .hero-box .left-side h1{
+            font-family: 'Halant', serif;
+            font-size: 3rem;
+            line-height: 1;
+        }
+        
+     
+        .hero-box .left-side p{
+            margin-top: 30px;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        
+        .hero-box .left-side a{
+           font-weight: bolder;
+            margin-top: 30px;
+            border: 2px solid ;
+            background-color: #ffffff00;
+            padding: 15px 30px;
+            border-bottom-right-radius: 10px;
+            color: #ffffff;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        
+
+        .hero-box .left-side a:hover{
+            font-weight: bolder;
+            color: black;
+            background-color: #fff;
+            border: 2px solid #fff ;
+            transition: all 0.5s ease-out;
+        } 
