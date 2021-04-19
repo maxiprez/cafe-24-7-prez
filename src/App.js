@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import { Component } from 'react';
 import Navbar from './components/NavBar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import CounterContainer from './containers/CounterContainer';
 
 class App extends Component {
 
@@ -15,6 +16,7 @@ return(
           greeting='Cosechando el mejor café para vos desde 1989'
           bannerP='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
       />
+      <CounterContainer />
     </div>
     );
   }
