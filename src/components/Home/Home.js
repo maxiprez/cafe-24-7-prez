@@ -1,5 +1,5 @@
 import React from 'react';
-import './ItemListContainer.css';
+import './Home.css';
 
 
 
@@ -8,8 +8,8 @@ import './ItemListContainer.css';
 return(
 <header className='parallax hero-box'>
 <div class="left-side">
-              <h1>{props.greeting}</h1>
-               <p>{props.bannerP}</p>
+              <h1>{props.titulo}</h1>
+               <p>{props.descripcion}</p>
               <a href="#">Sobre Nosotros</a>
             </div>
 </header>

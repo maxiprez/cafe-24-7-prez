@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import packCafe from './pack-cafe.png';
 import './ItemCount.css';
 
@@ -46,4 +46,4 @@ return(
     </div>
 );
 
-}
+}*/

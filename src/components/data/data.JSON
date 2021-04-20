@@ -1,0 +1,37 @@
+[{
+	"id": "1",
+	"title": "Café Colombia",
+	"description": "Café 100% tostado natural",
+	"price": "$300",
+	"pictureUrl": "#"
+}, {
+	"id": "2",
+	"title": "Café Blend",
+	"description": "El mejor blend de café",
+	"price": "$200",
+	"pictureUrl": "#"
+}, {
+	"id": "3",
+	"title": "Café Tostado Natural",
+	"description": "Blend especial",
+	"price": "$500",
+	"pictureUrl": "#"
+}, {
+	"id": "4",
+	"title": "Café Mezcla",
+	"description": "Blend de granos café tostado",
+	"price": "$250",
+	"pictureUrl": "#"
+}, {
+	"id": "5",
+	"title": "Café Torrado",
+	"description": "Café con agregado de azucar",
+	"price": "$400",
+	"pictureUrl": "#"
+}, {
+	"id": "6",
+	"title": "Promo café 1",
+	"description": "Promoción especial",
+	"price": "$550",
+	"pictureUrl": "#"
+}]
