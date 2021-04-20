@@ -14,23 +14,33 @@ function onDecrement ()  {
     setNumber(number < 1 ? 0 : number - 1);
 }
 
-  function agregarCompra(){
-      if (number > stock){
-        alert('No hay stock suficiente');
-      } else if(number === 0){
-       alert('No se agregó ningún producto');
-              }else{
-                  alert("Se agregó correctamente");
-              }
-  }
+
+function cantidad (){
+     if(number > 5){
+         return(
+             <p className='noStock'>Stock insuficiente.</p>
+         )
+     } else return (<p className='align-self-center'>Cantidad: {number}</p>)
+
+}
+
+function agregarCarrito (){
+    if(number === 0){
+        alert('no se pudo agregar nada');
+    } else{
+       alert('agregado');
+    }
+}
+ 
 
         return(
 
         <div>
-           <ItemCount  number = {number}
+           <ItemCount   number = {number}
                      increment = {onIncrement}
                      decrement = {onDecrement}
-                      agregar = {agregarCompra}/>
+                     cantidad  = {cantidad}
+                      agregar = {agregarCarrito}/>
         </div>
 
         );
