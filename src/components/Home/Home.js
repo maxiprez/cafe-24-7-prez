@@ -7,7 +7,7 @@ import './Home.css';
 
 return(
 <header className='parallax hero-box'>
-<div class="left-side">
+<div className="left-side">
               <h1>{props.titulo}</h1>
                <p>{props.descripcion}</p>
               <a href="#">Sobre Nosotros</a>

@@ -1,3 +1,8 @@
+
+
+
+//Esto se utilizó para la entrega del desafío 5:
+
 /*import React, { useState } from 'react';
 import ItemCount from '../components/ItemCount/ItemCount';
 
@@ -44,8 +49,6 @@ function agregarCarrito (){
         </div>
 
         );
-
-        
 
  
 }*/
