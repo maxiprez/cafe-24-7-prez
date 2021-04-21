@@ -7,7 +7,7 @@ export default function Item ({post}){
             <div>
            <div class="col">
                 <div class="card h-100">
-                <img src="..." class="card-img-top" alt="..."/>
+                <img src={post.pictureUrl} class="card-img-top" alt={post.id}/>
                 <div class="card-body">
                     <h5 class="card-title">{post.title}</h5>
                     <p class="card-text">{post.description}</p>

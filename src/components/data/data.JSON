@@ -3,35 +3,35 @@
 	"title": "Café Colombia",
 	"description": "Café 100% tostado natural",
 	"price": "$300",
-	"pictureUrl": "#"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-colombia_1.png?raw=true"
 }, {
 	"id": "2",
-	"title": "Café Blend",
+	"title": "Café Etiopia",
 	"description": "El mejor blend de café",
 	"price": "$200",
-	"pictureUrl": "#"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-etiopia.png?raw=true"
 }, {
 	"id": "3",
-	"title": "Café Tostado Natural",
+	"title": "Café Bolivia",
 	"description": "Blend especial",
 	"price": "$500",
-	"pictureUrl": "#"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-bolivia.png?raw=true"
 }, {
 	"id": "4",
-	"title": "Café Mezcla",
-	"description": "Blend de granos café tostado",
+	"title": "Café French toast",
+	"description": "Blend de granos de café tostado",
 	"price": "$250",
-	"pictureUrl": "#"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-french_roast.png?raw=true"
 }, {
 	"id": "5",
-	"title": "Café Torrado",
+	"title": "Café Espresso",
 	"description": "Café con agregado de azucar",
 	"price": "$400",
-	"pictureUrl": "#"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-espresso.png?raw=true"
 }, {
 	"id": "6",
-	"title": "Promo café 1",
-	"description": "Promoción especial",
+	"title": "Promo Tanzania",
+	"description": "Promoción especial sabor único",
 	"price": "$550",
-	"pictureUrl": "#"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-tanzania.png?raw=true"
 }]
