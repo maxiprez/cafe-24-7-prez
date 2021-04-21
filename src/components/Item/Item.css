@@ -1,0 +1,60 @@
+.card{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem !important;
+    border: solid #494646 2px;
+}
+.card-img-top{
+    width: 100px!important;
+    height: 200px!important;
+    object-fit: cover;
+ }
+
+ .btn-comprar{
+     border: solid 1px #b41b16;
+     color: #b41b16;
+     background-color: rgba(255, 255, 255, 0);
+     text-transform: uppercase;
+     font-weight: 900;
+     font-family: 'Nunito Sans', sans-serif;
+ }
+
+ .btn-comprar:hover{
+    background-color: #b41b16;
+    color: white;
+    border: solid 1px #b41b16;
+    transition: all 0.5s ease-out;
+ }
+
+ .btn-comprar:focus{
+    background-color: #b41b16;
+    color: white;
+    border: solid 1px #b41b16;
+    transition: all 0.5s ease-out;
+ }
+
+.btn-detalle{
+    border: solid 1px #494646;
+    color: #494646;
+    background-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-detalle:hover{
+    background-color: #494646;
+    color: white;
+    border: solid 1px #494646;
+    transition: all 0.5s ease-out;
+ }
+
+ .btn-detalle:focus{
+    background-color: #494646;
+    color: white;
+    border: solid 1px #494646;
+    transition: all 0.5s ease-out;
+ }
+

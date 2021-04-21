@@ -5,7 +5,7 @@ import Item from '../Item/Item';
 export default function ItemList({dataJsonInput}){
     return(
      
-       <div className="row row-cols-1 row-cols-md-3 g-4 text-center">
+       <div className="text-center card-group d-flex justify-content-center">
            {
                dataJsonInput.map((post)=>{
                     return(

@@ -1,19 +1,24 @@
 import React from 'react'
+import '../Item/Item.css'
 
 
 export default function Item ({post}){
 
     return(
             <div>
-           <div class="col">
-                <div class="card h-100">
-                <img src={post.pictureUrl} class="card-img-top" alt={post.id}/>
-                <div class="card-body">
-                    <h5 class="card-title">{post.title}</h5>
-                    <p class="card-text">{post.description}</p>
-                    <h4>{post.price}</h4>
+           <div className="col">
+                <div className="card h-100 " style={{width:"20rem"}}>
+                <img src={post.pictureUrl} className="card-img-top mt-4" alt={post.id}/>
+                <div className="card-body">
+                    <h5 className="card-title">{post.title}</h5>
+                    <p className="card-text">{post.description}</p>
+                    <h6>{post.price}</h6>
                 </div>
-                <a href="#" class="btn btn-primary">Ver detalle</a>
+                <div>
+                    <a href="#" className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>
+                    <a href="#" className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
+                </div>
+               
                 </div>
             </div>
 
