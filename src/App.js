@@ -6,6 +6,7 @@ import Navbar from './components/NavBar/Navbar';
 import Home from './components/Home/Home';
 //import CounterContainer from './containers/CounterContainer';
 import ItemListContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ return(
           descripcion='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
                                 />
        <ItemListContainer />
+       <ItemDetailContainer/>
     </div>
     );
   }
