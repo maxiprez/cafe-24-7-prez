@@ -3,7 +3,7 @@
 	"title": "Café Colombia",
 	"description": "Café 100% tostado natural",
 	"price": "$300",
-	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-colombia_1.png?raw=true"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-colombia.png?raw=true"
 }, {
 	"id": "2",
 	"title": "Café Etiopia",
@@ -12,26 +12,26 @@
 	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-etiopia.png?raw=true"
 }, {
 	"id": "3",
-	"title": "Café Bolivia",
-	"description": "Blend especial",
+	"title": "Café Andes",
+	"description": "Blend especial sabor único",
 	"price": "$500",
-	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-bolivia.png?raw=true"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-andes.png?raw=true"
 }, {
 	"id": "4",
 	"title": "Café French toast",
-	"description": "Blend de granos de café tostado",
+	"description": "Blend de granos de café tostado de origen Francés",
 	"price": "$250",
-	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-french_roast.png?raw=true"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-french.png?raw=true"
 }, {
 	"id": "5",
-	"title": "Café Espresso",
-	"description": "Café con agregado de azucar",
+	"title": "Café Espresso Rift Valley",
+	"description": "Café fuerte y oscuro",
 	"price": "$400",
-	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-espresso.png?raw=true"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-riftValley.png?raw=true"
 }, {
 	"id": "6",
-	"title": "Promo Tanzania",
-	"description": "Promoción especial sabor único",
+	"title": "Café descafeinado",
+	"description": "Descafeinado con notas de caramelo",
 	"price": "$550",
-	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-tanzania.png?raw=true"
+	"pictureUrl": "https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/components/assets/img/pack-cafe-descafeinado.png?raw=true"
 }]
