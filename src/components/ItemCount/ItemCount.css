@@ -6,8 +6,8 @@ body{
     font-weight: bold;
 }
 
-.card{
-    border: solid 2px black;
+.card-counter{
+   border: none;
     margin: 0 auto;
     float: none; 
     margin-bottom: 50px; 
@@ -18,3 +18,14 @@ body{
     border: solid rgb(192, 192, 192) 0.1px;
 }
 
+.btn-add-remove{
+    display: inline-block;
+    vertical-align: top;
+  
+    line-height: 30px;
+   
+    
+    text-align: center;
+
+    
+}

@@ -7,10 +7,11 @@ import ItemDetail from '../components/ItemDetail/ItemDetail';
     const API_URL_ITEMDETAIL = ('https://maxiprez.github.io/cafe-24-7-prez/src/components/data/dataDetail.JSON');
 
     useEffect(()=>{
-
+      setTimeout(()=>{
         fetch(API_URL_ITEMDETAIL)
         .then((response) => response.json())
         .then ((data) => setDataDetailJSON(data))
+      }, 2000);
     }, []);
 
     return (

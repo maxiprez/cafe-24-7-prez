@@ -56,3 +56,24 @@
    border: solid 1px #494646;
    transition: all 0.5s ease-out;
 }
+
+.card-modal{
+   
+  border: none;
+}
+
+ul li{
+   margin: 10px 0 10px 0;
+   
+}
+.modal-body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-img-top-detail {
+   width: 100% !important;
+   height: 25vw !important;
+   object-fit: cover;
+}
