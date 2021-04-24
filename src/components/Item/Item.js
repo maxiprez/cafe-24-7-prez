@@ -16,7 +16,7 @@ export default function Item ({post}){
                 </div>
                 <div>
                     <a href="#" className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>
-                    <a href="#" className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
+                    <a type="button" data-toggle="modal" data-target={`#card${post.id}`} className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
                 </div>
                
                 </div>

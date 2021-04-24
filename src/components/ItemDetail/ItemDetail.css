@@ -1,0 +1,58 @@
+.modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+@media(max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+.btn-carrito{
+    border: solid 1px #b41b16;
+    color: #b41b16;
+    background-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-carrito:hover{
+   background-color: #b41b16;
+   color: white;
+   border: solid 1px #b41b16;
+   transition: all 0.5s ease-out;
+}
+
+.btn-carrito:focus{
+   background-color: #b41b16;
+   color: white;
+   border: solid 1px #b41b16;
+   transition: all 0.5s ease-out;
+}
+
+.btn-cerrar{
+   border: solid 1px #494646;
+   color: #494646;
+   background-color: rgba(255, 255, 255, 0);
+   text-transform: uppercase;
+   font-weight: bold;
+   font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-cerrar:hover{
+   background-color: #494646;
+   color: white;
+   border: solid 1px #494646;
+   transition: all 0.5s ease-out;
+}
+
+.btn-cerrar:focus{
+   background-color: #494646;
+   color: white;
+   border: solid 1px #494646;
+   transition: all 0.5s ease-out;
+}
