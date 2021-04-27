@@ -21,11 +21,7 @@ body{
 .btn-add-remove{
     display: inline-block;
     vertical-align: top;
-  
-    line-height: 30px;
-   
-    
-    text-align: center;
+     text-align: center;
+      
 
-    
 }

@@ -1,8 +1,11 @@
 import React from 'react'
 import '../Item/Item.css'
+import { useHistory } from 'react-router-dom';
+
 
 
 export default function Item ({post}){
+const history = useHistory();
 
     return(
             <div>
@@ -16,7 +19,8 @@ export default function Item ({post}){
                 </div>
                 <div>
                     <a href="#" className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>
-                    <a type="button" data-toggle="modal" data-target={`#card${post.id}`} className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
+                    <a type="button" onClick={() => history.push(`/cafe/${post.id}`)} className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
+                   
                 </div>
                
                 </div>

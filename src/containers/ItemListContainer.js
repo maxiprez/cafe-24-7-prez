@@ -3,6 +3,7 @@ import ItemList from '../components/ItemList/ItemList';
 
 
 
+const { getItems } = require('../services/PostService');
 
 function ItemListContainer() {
  const [dataJSON, setDataJson] = useState ([]);
@@ -10,10 +11,10 @@ function ItemListContainer() {
 
     useEffect (()=>{
          setTimeout(()=>{
-        fetch('https://maxiprez.github.io/cafe-24-7-prez/src/components/data/data.JSON')
-        .then((response)=>response.json())
-        .then((data)=>setDataJson(data))
+        getItems()
+        .then(res => setDataJson(res))
         }, 2000);   
+
 }, []);
 
     return (

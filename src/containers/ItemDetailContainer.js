@@ -1,28 +1,27 @@
-import { data, map } from 'jquery';
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import ItemDetail from '../components/ItemDetail/ItemDetail';
 
+
+const { getItemsDetails } = require('../services/PostService');
+
  function ItemDetailContainer() {
-    const [dataDetailJSON, setDataDetailJSON] = useState([]);
-    const API_URL_ITEMDETAIL = ('https://maxiprez.github.io/cafe-24-7-prez/src/components/data/dataDetail.JSON');
+    const { cafeId } = useParams();
+    const [dataDetailJSON, setDataDetailJSON] = useState({id: "", title: "", precio: "", roastProfile: "", tastingNotes: "", pictureUrl: "", origin: "", socialImpact: ""});
 
     useEffect(()=>{
-      setTimeout(()=>{
-        fetch(API_URL_ITEMDETAIL)
-        .then((response) => response.json())
-        .then ((data) => setDataDetailJSON(data))
-      }, 2000);
-    }, []);
+     
+      getItemsDetails(cafeId)
+      .then(res => setDataDetailJSON(res))
+    
+    }, [cafeId]);
 
     return (
         <div>
-          
-              {
-                  dataDetailJSON.map((data)=>(
-                        <ItemDetail  key={data.id} data={data}/>
-                  ))}
-           
-          
+            <h1 className="mt-4 text-center">Detalle del producto</h1>
+           <div>
+               <ItemDetail id={dataDetailJSON.id} title={dataDetailJSON.title} precio={dataDetailJSON.precio} roastProfile={dataDetailJSON.roastProfile} tastingNotes={dataDetailJSON.tastingNotes}  pictureUrl={dataDetailJSON.pictureUrl} origin={dataDetailJSON.origin} socialImpact={dataDetailJSON} />
+           </div>
         </div>
     )
 

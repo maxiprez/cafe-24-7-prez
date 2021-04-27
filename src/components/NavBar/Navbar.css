@@ -11,9 +11,9 @@
   .navbar .navbar-nav .nav-link {
     padding: 1em 0.7em;
   }
+
   .navbar {
-   
-    padding: 0;
+       padding: 0;
   }
   .navbar .navbar-brand {
     padding: 0 0.7em;
@@ -23,6 +23,7 @@
   .navbar .navbar-nav .nav-link {
     position: relative;
   }
+
   .navbar .navbar-nav .nav-link::after {
     position: absolute;
     bottom: 0;
@@ -36,8 +37,12 @@
     height: 3px;
     transition: all 0.5s;
   }
+
+
+
   .navbar .navbar-nav .nav-link:hover::after {
     width: 100%;
+    
   }
 
 
@@ -49,44 +54,40 @@
         margin-right: 10px;
     }
 
-    .btn-sm.round {
-        border-radius: 24px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .btn-primary__singIn{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        color: black;
-        background-color: white;
-        border-color: black;
-        
-    }
-
-    .btn-primary__singIn:hover{
-        background-color: #edebe9;
-        border-color: black;
-        color: black;
-    }
-
-    .btn-primary__joinNow{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        color: white;
-        background-color: black;
-        border-color: black;
-        
-    }
-
-    .btn-primary__joinNow:hover{
-        background-color: #3d3935;
-        border-color: black;
-        color: white;
-    }
-
+  
+    
     .navbar-brand__cart{
        margin-right: 1rem !important; 
     }
+
+ .dropdown-menu{
+   border: none;
+ }
+  .dropdown .nav-link i{
+    position: relative;
+    font-size: 15px;
+    display:inline-block;
+    text-align:center;
+    color: #7c7c7d;
+  }
  
- 
+  .dropdown-menu a:focus{
+    background-color: none !important;
+     border-color: black;
+     color: #5d5b5b;
+   }
+
+   .dropdown-item:focus{
+    background-color: none !important;
+    color: black !important;
+   background-color: #d1d1d1 !important;
+   }
+
+   .dropdown-item{
+     color: #7c7c7d !important;
+   }
+
+  .dropdown-item:hover{
+    background-color: white !important;
+    color: #5d5b5b !important;
+  }

@@ -2,6 +2,8 @@ import React from 'react';
 import './Navbar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import Logo from '../Logo/Logo';
+import { FaChevronDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,7 +25,18 @@ function Navbar() {
   <div className="collapse navbar-collapse text-md-right text-center" id="collapsibleNavbar">
 
     <ul className="navbar-nav ">
-      <li className="nav-item"><a className="nav-link" href="#">Tienda</a></li>
+    <li class="nav-item dropdown">
+    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+        Tienda <i><FaChevronDown /></i>
+      </a>
+      <div class="dropdown-menu text-center">
+        <Link to={'/cafe'}><a class="dropdown-item nav-link" href="#">Café</a></Link>  
+       <a class="dropdown-item nav-link" href="#">Ofertas</a> 
+       <a class="dropdown-item nav-link" href="#">Productos</a>
+      </div>
+    </li>
+      
+     
       <li className="nav-item"><a className="nav-link" href="#">Empresa</a></li>
       <li className="nav-item"><a className="nav-link" href="#">Nosotros</a></li>
       <li className="nav-item"><a className="nav-link" href="#">Servicios</a></li>
