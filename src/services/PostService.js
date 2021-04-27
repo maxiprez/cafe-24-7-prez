@@ -1,5 +1,5 @@
 
-const URL_PRODUCTOS = ('https://maxiprez.github.io/cafe-24-7-prez/src/components/data/dataDetail.JSON');
+const URL_PRODUCTOS = ('https://maxiprez.github.io/cafe-24-7-prez/src/components/data/data.JSON');
 
 
 function getItems (){
