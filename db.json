@@ -1,4 +1,5 @@
-[
+{
+"products": [ 
     {
        "id":"1",
        "title":"Café origen Colombia",
@@ -60,4 +61,4 @@
        "socialImpact":"Empoderamiento de las agricultoras, mejoras en el saneamiento, aumento de la educación sobre la productividad"
     }
  ]
-
+}
