@@ -14,7 +14,7 @@
     },
     {
        "id":"2",
-       "category": "Intenso",
+       "category": "Medio",
        "title":"Café origen Etiopia single",
        "precio":"$200",
        "description": "El mejor blend de café",
@@ -71,7 +71,44 @@
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-descafeinado.png?raw=true",
        "origin":"Granos Arábicos 100% Colombianos",
        "socialImpact":"Empoderamiento de las agricultoras, mejoras en el saneamiento, aumento de la educación sobre la productividad"
-    }
+    },
+    {
+      "id":"7",
+      "category": "Medio",
+      "title":"Café Perú Single",
+      "precio":"$500",
+      "description": "Cítricos dulces, manzana verde, chocolate con leche, maní tostado, con un final afrutado y crujiente.",
+      "roastProfile":"Negro",
+      "tastingNotes":"Salado, sedoso, con notas de cacao",
+      "pictureUrl":"",
+      "origin":"100% single de origen Peruano.",
+      "socialImpact":"Educación primaria indígena, formación de agricultores indígenas."
+   },
+   {
+      "id":"8",
+      "category": "Suave",
+      "title":"Bright Roast Torrado Suave",
+      "precio":"$400",
+      "description": "Notas brillantes de frambuesa en la entrada, impresiones de almendras dulces, pomelo rojo rubí, sensación en boca jugosa, final crujiente.",
+      "roastProfile":"Negro",
+      "tastingNotes":"Cítricos dulces, manzana verde, chocolate con leche, maní tostado, con un final afrutado y crujiente.",
+      "pictureUrl":"",
+      "origin":"100% frijoles arábica mezclados artesanalmente, orgánicos y certificados",
+      "socialImpact":"empoderamiento económico de la mujer, mejora de las prácticas agrícolas, gestión sostenible de residuos, proyectos de biogás renovable, mejora de las condiciones laborales para las mujeres, educación sanitaria sobre el ébola, el covid-19 y la malaria."
+   },
+   {
+      "id":"9",
+      "category": "Medio",
+      "title":"Café Origen Honduras",
+      "precio":"$450",
+      "description": "La sutil suavidad del azúcar de caña sigue una acidez similar a la naranja. Impresiones redondas y tostadas de avellana interactúan con un delicado dulzor y un final de chocolate negro.",
+      "roastProfile":"Negro",
+      "tastingNotes":"Cítrico, suave, a nuez con notas de chocolate negro ligeramente dulces.",
+      "pictureUrl":"",
+      "origin":"100% frijoles arábica hondureños orgánicos certificados de origen único",
+      "socialImpact":"Empoderamiento económico femenino, mejora de las prácticas agrícolas."
+   }
+   
 
  ]
 }
