@@ -2,8 +2,10 @@
 "products": [ 
     {
        "id":"1",
+       "category": "Medio",
        "title":"Café origen Colombia",
        "precio":"$300",
+       "description": "Café 100% tostado natural",
        "roastProfile":"Medio",
        "tastingNotes":"Cítricos dulces, frutos rojos, almendras dulces, chocolate con leche, té negro",
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-colombia.png?raw=true",
@@ -12,8 +14,10 @@
     },
     {
        "id":"2",
+       "category": "Intenso",
        "title":"Café origen Etiopia single",
        "precio":"$200",
+       "description": "El mejor blend de café",
        "roastProfile":"Dark",
        "tastingNotes":"Atrevido, rico, intenso, ¡un clásico!",
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-etiopia.png?raw=true",
@@ -22,8 +26,10 @@
     },
     {
        "id":"3",
-       "title":"Café montañas de los Andes Blend",
+       "category": "Intenso",
+       "title":"Café de los Andes Blend",
        "precio":"$500",
+       "description": "Blend especial sabor único",
        "roastProfile":"Dark",
        "tastingNotes":"Atrevido, rico, intenso, ¡un clásico!",
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-andes.png?raw=true",
@@ -32,8 +38,10 @@
     },
     {
        "id":"4",
+       "category": "Intenso",
        "title":"Café blend French roast",
        "precio":"$250",
+       "description": "Café tostado de origen Francés",
        "roastProfile":"Muy negro",
        "tastingNotes":"intenso, dulce, picante, ahumado.",
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-french.png?raw=true",
@@ -42,8 +50,10 @@
     },
     {
        "id":"5",
+       "category": "Intenso",
        "title":"Café Espresso Rift Valley",
        "precio":"$400",
+       "description": "Café fuerte y oscuro",
        "roastProfile":"Negro",
        "tastingNotes":"Grande, equilibrado, picante.",
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-riftValley.png?raw=true",
@@ -52,13 +62,16 @@
     },
     {
        "id":"6",
+       "category": "Medio",
        "title":"Café descafeinado",
        "precio":"$550",
+       "description": "Descafeinado con notas de caramelo",
        "roastProfile":"Negro",
        "tastingNotes":"Dulce, rico, intenso, un clásico!",
        "pictureUrl":"https://github.com/maxiprez/cafe-24-7-prez/blob/main/src/assets/img/pack-cafe-descafeinado.png?raw=true",
        "origin":"Granos Arábicos 100% Colombianos",
        "socialImpact":"Empoderamiento de las agricultoras, mejoras en el saneamiento, aumento de la educación sobre la productividad"
     }
+
  ]
 }

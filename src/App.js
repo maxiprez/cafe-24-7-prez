@@ -5,8 +5,8 @@ import { Component } from 'react';
 import Navbar from './components/NavBar/Navbar';
 import Home from './components/Home/Home';
 //import CounterContainer from './containers/CounterContainer';
-import ItemListContainer from './containers/ItemListContainer';
-import ItemDetailContainer from './containers/ItemDetailContainer';
+import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -27,14 +27,15 @@ return(
                                       />
           </Route>
 
-          <Route>
-            <ItemListContainer exact path="/cafe"/>
+         
+          <Route exact path="/cafe">
+            <ItemListContainer />
           </Route>
 
-
-          <Route>
-            <ItemDetailContainer path="/cafe/:cafeId"/> 
-          </Route>       
+          <Route  path="/cafe/:cafeId">
+            <ItemDetailContainer /> 
+          </Route> 
+                
         
         </Switch>
         <Footer />

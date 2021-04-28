@@ -6,12 +6,12 @@
     margin-top: 5rem !important;
     border: solid #494646 2px;
 }
+
 .card-img-top{
     width: 100px!important;
     height: 200px!important;
     object-fit: cover;
  }
-
 
  .btn-comprar{
      border: solid 1px #b41b16;

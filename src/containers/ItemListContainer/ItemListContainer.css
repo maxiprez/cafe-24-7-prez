@@ -1,0 +1,8 @@
+.item-list-container{
+    margin-top: 2rem;
+}
+
+.item-list-container__title{
+    margin-top: 7rem;
+    font-family: 'Halant', serif;
+}

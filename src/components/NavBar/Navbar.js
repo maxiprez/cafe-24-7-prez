@@ -25,14 +25,14 @@ function Navbar() {
   <div className="collapse navbar-collapse text-md-right text-center" id="collapsibleNavbar">
 
     <ul className="navbar-nav ">
-    <li class="nav-item dropdown">
-    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+    <li className="nav-item dropdown">
+    <a className="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
         Tienda <i><FaChevronDown /></i>
       </a>
-      <div class="dropdown-menu text-center">
-        <Link to={'/cafe'}><a class="dropdown-item nav-link" href="#">Café</a></Link>  
-       <a class="dropdown-item nav-link" href="#">Ofertas</a> 
-       <a class="dropdown-item nav-link" href="#">Productos</a>
+      <div className="dropdown-menu text-center">
+        <Link to={'/cafe'}><a className="dropdown-item nav-link" href="#">Café</a></Link>  
+       <a className="dropdown-item nav-link" href="#">Ofertas</a> 
+       <a className="dropdown-item nav-link" href="#">Productos</a>
       </div>
     </li>
       

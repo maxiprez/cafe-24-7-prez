@@ -1,5 +1,5 @@
 
-const URL_PRODUCTOS = ('https://maxiprez.github.io/cafe-24-7-prez/src/components/data/data.JSON');
+const URL_PRODUCTOS = ('https://my-json-server.typicode.com/maxiprez/cafe-24-7-prez/products');
 
 
 function getItems (){
@@ -14,7 +14,7 @@ function getItems (){
 
 function getItemsDetails (postId){
     return new Promise ((resolve, reject)=>{
-        fetch(`https://my-json-server.typicode.com/maxiprez/cafe-24-7-prez/products${postId}`)
+        fetch(`https://my-json-server.typicode.com/maxiprez/cafe-24-7-prez/products/${postId}`)
         .then(res => res.json())
         .then(data => resolve(data))
         .catch(err => reject(err))
