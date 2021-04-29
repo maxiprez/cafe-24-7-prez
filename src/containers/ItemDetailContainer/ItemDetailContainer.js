@@ -8,15 +8,15 @@ const { getItemsDetails } = require('../../services/PostService');
 
  function ItemDetailContainer() {
     const history = useHistory();
-    const { cafeId } = useParams();
-    const [dataDetailJSON, setDataDetailJSON] = useState({id: "", title: "", precio: "", roastProfile: "", tastingNotes: "", pictureUrl: "", origin: "", socialImpact: ""});
+    const { itemId } = useParams();
+    const [dataJSON, setDataJSON] = useState({id: "", title: "", precio: "", category:"", roastProfile: "", tastingNotes: "", pictureUrl: "", origin: "", socialImpact: ""});
 
     useEffect(()=>{
      
-      getItemsDetails(cafeId)
-      .then(res => setDataDetailJSON(res))
-    
-    }, [cafeId]);
+      getItemsDetails(itemId)
+      .then(res => setDataJSON(res))
+    console.log(itemId)
+    }, [itemId]);
 
     return (
         <div className="item-detail-container">
@@ -26,10 +26,10 @@ const { getItemsDetails } = require('../../services/PostService');
             </div>
             
            <div>
-               <ItemDetail id={dataDetailJSON.id} title={dataDetailJSON.title} precio={dataDetailJSON.precio} roastProfile={dataDetailJSON.roastProfile} tastingNotes={dataDetailJSON.tastingNotes}  pictureUrl={dataDetailJSON.pictureUrl} origin={dataDetailJSON.origin} socialImpact={dataDetailJSON.socialImpact} />
+               <ItemDetail id={dataJSON.id} title={dataJSON.title} precio={dataJSON.precio} category={dataJSON.category} roastProfile={dataJSON.roastProfile} tastingNotes={dataJSON.tastingNotes}  pictureUrl={dataJSON.pictureUrl} origin={dataJSON.origin} socialImpact={dataJSON.socialImpact} />
            </div>
            <div>
-             <a type="button" onClick={() => history.push(`/cafe`)} className="btn-detalle btn btn-primary mb-4 ml-2">Volver</a>
+             <a type="button" onClick={() => history.push(`/products`)} className="btn-detalle btn btn-primary mb-4 ml-2">Volver</a>
            </div>
         </div>
     )

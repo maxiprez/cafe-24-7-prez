@@ -4,7 +4,7 @@ import ItemCount from '../../components/ItemCount/ItemCount';
 export default function CounterContainer (props){
 
 const [number, setNumber] = useState(1);
-var stock = 5;
+//var stock = 5;
 
 function onIncrement (){
     setNumber(number + 1);

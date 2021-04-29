@@ -7,12 +7,12 @@ import ItemList from '../../components/ItemList/ItemList';
 const { getItems } = require('../../services/PostService');
 
 function ItemListContainer() {
- const [dataJSON, setDataJson] = useState ([]);
+ const [dataJSON, setDataJSON] = useState ([]);
 
 
     useEffect (()=>{
         getItems()
-        .then(res => setDataJson(res))
+        .then(res => setDataJSON(res))
        
 }, []);
 

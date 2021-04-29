@@ -12,6 +12,7 @@ function getItems (){
     });
 }
 
+
 function getItemsDetails (postId){
     return new Promise ((resolve, reject)=>{
         fetch(`https://my-json-server.typicode.com/maxiprez/cafe-24-7-prez/products/${postId}`)
@@ -26,4 +27,5 @@ function getItemsDetails (postId){
 module.exports ={
 getItems,
 getItemsDetails,
+
 }

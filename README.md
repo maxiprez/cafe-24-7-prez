@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+<h1 align="center">Bienvenido a Cafe 24/7 proyecto final React JS 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="El proyecto al día de la fecha está compuesto por 5 enlaces funcionales, el primer enlace es el logo que corresponde a la página de inicio (home), el segundo enlace corresponde a la totalidad de los productos (9 productos en total). Los enlaces restantes del navbar son para filtrar por tipo de café (suave, medio, intenso) a través de &#34;/products/:categoryId&#34; se accede puntualmente a  las categorías anteriormente mencionadas. Restaría vincular el resto de los links del navbar para concluir con el resto de las secciones." target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> El proyecto surgió de la idea que en Argentina hay poca variedad de Cafés de direfentes étnias, actualmente es un proyecto NO real con fines académicos,  pero este e-commerce se podrá adaptar fácilmente a cualquier otro tipo de producto.
 
-## Available Scripts
+## Install
 
-In the project directory, you can run:
+```sh
+npm install
+```
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+npm run start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Run tests
 
-### `npm test`
+```sh
+npm run test
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Author
 
-### `npm run build`
+👤 **Maximiliano Prez**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Website: https://github.com/maxiprez/
+* Github: [@maxiprez](https://github.com/maxiprez)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/maximiliano-prez\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/maximiliano-prez\/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Show your support
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Give a ⭐️ if this project helped you!
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***

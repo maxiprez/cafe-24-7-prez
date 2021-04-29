@@ -91,3 +91,7 @@
     background-color: white !important;
     color: #5d5b5b !important;
   }
+
+  .link-text:hover{
+ text-decoration: none;
+  }

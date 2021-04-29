@@ -30,9 +30,10 @@ function Navbar() {
         Tienda <i><FaChevronDown /></i>
       </a>
       <div className="dropdown-menu text-center">
-        <Link to={'/cafe'}><a className="dropdown-item nav-link" href="#">Café</a></Link>  
-       <a className="dropdown-item nav-link" href="#">Ofertas</a> 
-       <a className="dropdown-item nav-link" href="#">Productos</a>
+        <Link to={'/products'} className="link-text"><a className="dropdown-item nav-link" href="#">Todos</a></Link>  
+        <Link to={'/products/Suave'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Suave</a></Link>  
+        <Link to={'/products/Medio'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Medio</a></Link>
+        <Link to={'/products/Intenso'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Intenso</a></Link>
       </div>
     </li>
       

@@ -5,7 +5,7 @@ import CardTutorial from '../CardTutorial/CardTutorial'
 
 
 
-export default function ItemDetail({id, title, precio, roastProfile, tastingNotes, pictureUrl, origin, socialImpact}) {
+export default function ItemDetail({ id, title, precio, category, roastProfile, tastingNotes, pictureUrl, origin, socialImpact}) {
    
     return (
          
@@ -20,12 +20,13 @@ export default function ItemDetail({id, title, precio, roastProfile, tastingNote
 
                     <div className="row no-gutters">
                         <div className="col-md-4">
-                        <img src={pictureUrl} className="card-img-top h-100 card-img-top-detail"  alt={id}/>
+                        <img src={pictureUrl} className="card-img-top h-100 card-img-top-detail"  alt= {id}/>
                         </div>
                         <div className="col-md-8">
                         <div className="card-body">
                             <h4 className="card-title">{title}</h4>
                             <h5 className="card-text">Precio: {precio}</h5>
+                            <h5 className="card-text">Categoría: {category}</h5>
                             <ul>
                                 <li>Roast Profile: {roastProfile}</li>
                                 <li>Intensidad: {tastingNotes}</li>
