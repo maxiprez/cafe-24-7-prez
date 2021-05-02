@@ -10,41 +10,45 @@ import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailCont
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ItemCategoryContainer from './containers/ItemCategoryContainer/ItemCategoryContainer';
-
-
+//import  CartContextProvider  from './context/cartContext';
+import CartPageContainer from './containers/CartPageContainer/CartPageContainer';
 
 class App extends Component {
 
 render(){
 return(
     <div>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home
-                titulo='Cosechando el mejor café para vos desde 1989'
-                descripcion='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
-                                      />
-          </Route>
+    {/* <CartContextProvider> */}
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home
+                  titulo='Cosechando el mejor café para vos desde 1989'
+                  descripcion='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
+                                        />
+            </Route>
 
-         
-          <Route exact path="/products">
-            <Products />
-          </Route>
+          
+            <Route exact path="/products">
+              <Products />
+            </Route>
 
-          <Route path="/products/:categoryId">
-            <ItemCategoryContainer />
-          </Route>
+            <Route path="/products/:categoryId">
+              <ItemCategoryContainer />
+            </Route>
 
-          <Route  path="/item/:itemId">
-            <ItemDetailContainer /> 
-          </Route> 
-                
-        
-        </Switch>
-        <Footer />
-      </Router>   
+            <Route  path="/item/:itemId">
+              <ItemDetailContainer /> 
+            </Route> 
+                  
+            <Route path ="/cart" >
+              <CartPageContainer />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>   
+        {/* </CartContextProvider> */}
     </div>
     );
   }

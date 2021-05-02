@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import ItemCount from '../../components/ItemCount/ItemCount';
 
-export default function CounterContainer (props){
-
+export default function CounterContainer ({productName, finalizarCompra}){
+ 
+//const finalizar = finish;
 const [number, setNumber] = useState(1);
-//var stock = 5;
+var stock = 5;
 
 function onIncrement (){
     setNumber(number + 1);
@@ -15,8 +16,9 @@ function onDecrement ()  {
 }
 
 
+
 function cantidad (){
-     if(number > 5){
+     if(number > stock){
          return(
              <p className='noStock'>Stock insuficiente.</p>
          )
@@ -24,12 +26,20 @@ function cantidad (){
 
 }
 
-function agregarCarrito (){
-    if(number === 0){
-        alert('no se pudo agregar nada');
-    } else{
-       alert('agregado');
+// function agregarCarrito (){
+//     if(number === 0){
+//         alert('no se pudo agregar nada');
+//     } else return (console.log('termina tu compra'))
+// }
+
+function onAdd() {
+    if (number !== 0){
+        console.log (`Se agregaron: ${number} unidad/es de: ${productName} al carrito`)
+        
+       finalizarCompra(number);
     }
+    else return (console.log('No se agregó ningún producto'));
+   
 }
  
 
@@ -40,7 +50,8 @@ function agregarCarrito (){
                      increment = {onIncrement}
                      decrement = {onDecrement}
                      cantidad  = {cantidad}
-                      agregar = {agregarCarrito}/>
+                      agregar = {onAdd}
+                         />
         </div>
 
         );

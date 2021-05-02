@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CounterContainer from '../../containers/CounterContainer/CounterContainer';
 import './ItemDetail.css';
 import CardTutorial from '../CardTutorial/CardTutorial'
+import { useHistory } from 'react-router-dom';
+
+export default function ItemDetail({id, title, precio, category, roastProfile, tastingNotes, pictureUrl, origin, socialImpact}) {
+  const history = useHistory();
+
+  const onAdd = {
+    title: title,
+    precio: precio, 
+    category: category,
+    origin: origin,
+ }
+
+
+ const [show, setShow] = useState (true);
+
+ let quantityBuy;
+
+ function finishButton (quantity){
+
+ setShow({
+     hidden: true
+ });
+
+quantityBuy = quantity;
+
+onAdd.quantity = quantityBuy;
+
+}
 
 
 
-export default function ItemDetail({ id, title, precio, category, roastProfile, tastingNotes, pictureUrl, origin, socialImpact}) {
-   
-    return (
+return (
          
 
     <div className="container-cards">       
@@ -39,7 +65,14 @@ export default function ItemDetail({ id, title, precio, category, roastProfile, 
                        
                     </div>
                     <div className="counter-container">
-                        <CounterContainer/>
+                        <CounterContainer productName = {title} finalizarCompra = {finishButton} />
+                      
+
+                        <button hidden = {!show.hidden} onClick={() => history.push('/cart')} className="btn btn-danger btn-terminar-compra text-center mt-4">Terminar compra</button> 
+                       
+                            
+                          
+                        
                     </div>
                 </div>
                       

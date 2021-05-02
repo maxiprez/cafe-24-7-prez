@@ -67,3 +67,32 @@ ul li{
    height: 25vw !important;
    object-fit: cover;
 }
+
+.btn-terminar-compra{
+  border: solid 1px #b41b16;
+     color: #b41b16;
+     background-color: rgba(255, 255, 255, 0);
+     text-transform: uppercase;
+     font-weight: 900;
+     font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-terminar-compra:hover{
+     background-color: #b41b16;
+    color: white;
+    border: solid 1px #b41b16;
+    transition: all 0.5s ease-out;
+ }
+
+ .btn-terminar-compra:focus{
+     background-color: #b41b16;
+    color: white;
+    border: solid 1px #b41b16;
+    transition: all 0.5s ease-out;
+ }
+
+ .counter-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
