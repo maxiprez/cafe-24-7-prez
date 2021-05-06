@@ -4,12 +4,12 @@ import { CartContext } from '../../context/CartContext';
 import './Cart.css'
 
 
-export default function Cart({itemSale, onRemove}) {
+export default function Cart({ itemSale, onRemove }) {
 
 const [number, setNumber] = useState(itemSale.quantity);
 const { updateToCart } = useContext(CartContext);
 
-
+//Para probar:
 if (isNaN(number)){
     console.log('No es un numero!');
 }
@@ -25,13 +25,16 @@ function onDecrement(){
 }
 
 const [show, setShow] = useState(false);
+
 function updateQuantity(){
     const newItem = {
         id: itemSale.id,
         title: itemSale.title,
         precio: itemSale.precio,
         quantity: number
+        
     };
+    
     console.log(newItem);
     updateToCart(newItem);
     setShow({
@@ -46,13 +49,13 @@ let subTotal = itemSale.precio * number;
       <tr>
             <th scope="row">{itemSale.id}</th>
             <td>{itemSale.title}</td>
-            <td>
+            <td className="container-plus-minus row">
                 {
-                 number > 1 ? <button onClick={onDecrement} hidden={show.hidden} className="btn btn-danger btn-xs"><FaMinus /></button> : <button className="btn btn-danger btn-xs" disabled><FaMinus /></button>
+                 number > 1 ? <button onClick={onDecrement} hidden={show.hidden} className="btn btn-danger btn-xs mr-2"><FaMinus /></button> : <button className="btn btn-danger btn-xs mr-2" disabled><FaMinus /></button>
                 }
-                <span className="cart-visual">{number}</span>
+                <span className="text-center">{number}</span>
                 {
-                 number < 5 ? <button onClick={onIncrement} hidden={show.hidden} className="btn btn-success btn-xs ml-4"><FaPlus /></button> : <button className="btn btn-success btn-xs ml-4" disabled><FaPlus /></button>
+                 number < 5 ? <button onClick={onIncrement} hidden={show.hidden} className="btn btn-success btn-xs ml-2"><FaPlus /></button> : <button className="btn btn-success btn-xs ml-2" disabled><FaPlus /></button>
                 }
             </td>
             <td>

@@ -73,19 +73,10 @@ return (
                     <div className="counter-container">
                         <ItemCount  finalizarCompra = {finishButton} />
                       
-
                         <button hidden = {!show.hidden} onClick={() => history.push('/cart')} className="btn btn-danger btn-terminar-compra text-center mt-4">Terminar compra</button> 
-                       
-                            
-                          
-                        
-                    </div>
+                   </div>
                 </div>
-                      
             </div>
-        
-        
-      
        </div>    
 
 

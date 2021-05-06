@@ -11,5 +11,12 @@
     margin-left: 1rem;
 }
 
+.container-plus-minus{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
