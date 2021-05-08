@@ -1,0 +1,21 @@
+.action-button-ok{
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.action-button-del{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    font-size: 1rem !important;
+   }
+
+.container-plus-minus{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
