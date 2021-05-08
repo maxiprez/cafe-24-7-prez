@@ -32,12 +32,12 @@ function onDecrementcantidad(){
   updateToCart(newItem);
 }
 
-let subTotal = (itemSale.precio*itemSale.cantidad);
+let subTotal = (itemSale.precio * itemSale.cantidad);
 
     return (
       <>
       <tr>
-            <th scope="row">{itemSale.titulo}</th>
+            <th>{itemSale.titulo}</th>
             <td className="container-plus-minus row">
                 {
                  itemSale.cantidad > 1 ? <button onClick={onDecrementcantidad}  className="btn btn-danger btn-xs mr-2"><FaMinus /></button> : <button className="btn btn-danger btn-xs mr-2" disabled><FaMinus /></button>

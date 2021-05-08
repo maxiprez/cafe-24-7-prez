@@ -4,8 +4,9 @@ import { CartContext } from '../../context/CartContext';
 
 export default function CartList() {
 
-    const { cart, clearCart } = useContext(CartContext);
-    console.log(cart)
+    const { cart, clearCart, totalPrice } = useContext(CartContext);
+    console.log(cart);
+    
     
 
     if (cart.length === 0 ) return <h1 className="text-center">Tu carrito está vacío</h1>
@@ -13,7 +14,7 @@ export default function CartList() {
     return (
         <div>
           
-            <table className="table">
+            <table className="table table-hover">
                 <thead className="thead-dark">
                     <tr>
                         <th scope="col">Producto</th>
@@ -38,7 +39,7 @@ export default function CartList() {
                                 </button>
                             </td>
                             <td className="font-weight-bold">Total a abonar</td>
-                            <td className="font-weight-bold">$ <span>{}</span></td>
+                            <td className="font-weight-bold">$ <span>{totalPrice}</span></td>
                         </tr>
                     
                 </tfoot>

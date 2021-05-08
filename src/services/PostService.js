@@ -24,7 +24,7 @@ function getItemsDetails (postId){
 
 
 
-module.exports ={
+module.exports = {
 getItems,
 getItemsDetails,
 
