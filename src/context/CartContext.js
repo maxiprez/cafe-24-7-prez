@@ -3,8 +3,10 @@ import { useState, createContext } from 'react';
 export const CartContext = createContext([]);
 
 export default function AppContextProvider({ children }) {
-const [cart, setCart] = useState ([]);
 
+const [cart, setCart] = useState ([]);
+// const [totalPrice, setTotalPrice] = useState(0);
+// const [totalItems, setTotalItems] = useState(0);
 
 function isInCart (id){
     return cart.some(item => item.id === id)

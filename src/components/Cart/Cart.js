@@ -6,43 +6,32 @@ import './Cart.css'
 
 export default function Cart({ itemSale, onRemove }) {
 
-const [number, setNumber] = useState(itemSale.quantity);
 const { updateToCart } = useContext(CartContext);
+console.log(itemSale.quantity);
 
-//Para probar:
-if (isNaN(number)){
-    console.log('No es un numero!');
-}
 
-function onIncrement(){
-    setNumber(number + 1);
-    itemSale.quantity = number;
-}
-
-function onDecrement(){
-    setNumber(number - 1);
-    itemSale.quantity = number;
-}
-
-const [show, setShow] = useState(false);
-
-function updateQuantity(){
+function onIncrementQuantity(){
     const newItem = {
         id: itemSale.id,
-        title: itemSale.title,
+        category: itemSale.category,
         precio: itemSale.precio,
-        quantity: number
-        
-    };
-    
-    console.log(newItem);
-    updateToCart(newItem);
-    setShow({
-        hidden: true
-    });
+        quantity: itemSale.quantity + 1
+   }
+   console.log(newItem);
+   updateToCart(newItem);
 }
 
-let subTotal = itemSale.precio * number;
+function onDecrementQuantity(){
+    const newItem = { id: itemSale.id,
+    category: itemSale.category,
+    precio: itemSale.precio,
+    quantity: itemSale.quantity -1 
+ }
+  console.log(newItem);
+  updateToCart(newItem);
+}
+
+let subTotal = (itemSale.precio*itemSale.quantity);
 
     return (
       <>
@@ -51,15 +40,15 @@ let subTotal = itemSale.precio * number;
             <td>{itemSale.title}</td>
             <td className="container-plus-minus row">
                 {
-                 number > 1 ? <button onClick={onDecrement} hidden={show.hidden} className="btn btn-danger btn-xs mr-2"><FaMinus /></button> : <button className="btn btn-danger btn-xs mr-2" disabled><FaMinus /></button>
+                 itemSale.quantity > 1 ? <button onClick={onDecrementQuantity}  className="btn btn-danger btn-xs mr-2"><FaMinus /></button> : <button className="btn btn-danger btn-xs mr-2" disabled><FaMinus /></button>
                 }
-                <span className="text-center">{number}</span>
+                <span className="text-center">{itemSale.quantity}</span>
                 {
-                 number < 5 ? <button onClick={onIncrement} hidden={show.hidden} className="btn btn-success btn-xs ml-2"><FaPlus /></button> : <button className="btn btn-success btn-xs ml-2" disabled><FaPlus /></button>
+                 itemSale.quantity < 5 ? <button onClick={onIncrementQuantity}  className="btn btn-success btn-xs ml-2"><FaPlus /></button> : <button className="btn btn-success btn-xs ml-2" disabled><FaPlus /></button>
                 }
             </td>
             <td>
-                <button onClick={updateQuantity} className="action-button-ok"><i><FaRegCheckCircle/></i></button>
+                
                 <button onClick={() => onRemove(itemSale.id)} className="action-button-del">
                 <i><FaTrashAlt /></i> 
                 </button>

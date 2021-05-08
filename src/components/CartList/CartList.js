@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import Cart from '../Cart/Cart';
 import {CartContext} from '../../context/CartContext';
 
-export default function CartList({ onRemove }) {
+export default function CartList() {
 
     const { cart, clearCart } = useContext(CartContext);
     console.log(cart)
@@ -25,7 +25,7 @@ export default function CartList({ onRemove }) {
                 </thead>
                 <tbody>
                     {cart.map(item => (
-                        <Cart key={item.id} itemSale={item} onRemove={onRemove}/>
+                        <Cart key={item.id} itemSale={item}/>
                     ))}
                 </tbody>
                 <tfoot>
