@@ -1,6 +1,6 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import Cart from '../Cart/Cart';
-import {CartContext} from '../../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 
 export default function CartList() {
 
@@ -14,24 +14,23 @@ export default function CartList() {
         <div>
           
             <table className="table">
-                <thead>
+                <thead className="thead-dark">
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Producto</th>
                         <th scope="col">Cantidad</th>
-                        <th scope="col">Confirmar / Eliminar</th>
+                        <th scope="col">Eliminar</th>
                         <th scope="col">Total</th>
                     </tr>
                 </thead>
                 <tbody>
                     {cart.map(item => (
-                        <Cart key={item.id} itemSale={item}/>
+                        <Cart key={item.id} itemSale={item} />
                     ))}
                 </tbody>
                 <tfoot>
                 
-                        <tr id="footer-carrito">
-                            <th></th>
+                        <tr id="cart-footer">
+                       
                             <td></td>
                             <td>
                                 <button className="btn btn-danger btn-sm" id="vaciar-carrito" onClick={clearCart}>
@@ -44,7 +43,7 @@ export default function CartList() {
                     
                 </tfoot>
             </table>
-            <p className="cart-remark">IMPORTANTE: Antes de continuar con su compra por favor confirme cada producto haciendo click en el check de cada uno.</p>
+            
       
         </div>
     )

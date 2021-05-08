@@ -12,39 +12,44 @@ function isInCart (id){
     return cart.some(item => item.id === id)
 }
 
-function addToCart({id, title, precio, quantity}){
+function addToCart({id, titulo, precio, cantidad}){
  const isCurrentInCart = isInCart(id)
     if(isCurrentInCart){
         const newCart = cart.map(item => {
             if (item.id === id){
                 return {
                     ...item,
-                    quantity: quantity + item.quantity
+                    cantidad: cantidad + item.cantidad
                 }
             }
             return item
         })
         return setCart([...newCart])
     }
-    setCart([...cart, {id, title, precio, quantity}])
+    setCart([...cart, {id, titulo, precio, cantidad}])
 }
 
- function updateToCart({id, title, precio, quantity}){
+ function updateToCart({id, titulo, precio, cantidad}){
      const isCurrentInCart = isInCart(id)
         if(isCurrentInCart){
             const newCart = cart.map(item => {
                 if (item.id === id){
                     return {
                         ...item,
-                        quantity: quantity 
+                        cantidad: cantidad 
                     }
                 }
                 return item
             })
             return setCart([...newCart])
         }
-        setCart([...cart, {id, title, precio, quantity}])
+        setCart([...cart, {id, titulo, precio, cantidad}])
     }
+
+function handleRemove (id){
+    const newcart = cart.filter ((item) => item.id !== id);
+    setCart(newcart);
+}
 
 function clearCart(){
     setCart([]);
@@ -58,6 +63,7 @@ function clearCart(){
                 addToCart,
                 clearCart,
                 updateToCart,
+                handleRemove,
 
             }
         }>

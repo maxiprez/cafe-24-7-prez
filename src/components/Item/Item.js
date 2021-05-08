@@ -15,7 +15,7 @@ const history = useHistory();
                         <div className="card-body">
                             <h5 className="card-title">{data.title}</h5>
                             <p className="card-text">{data.description}</p>
-                            <h6>{data.precio}</h6>
+                            <h6>${data.precio}</h6>
                         </div>
                         <div>
                             <a href="#" className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>

@@ -57,7 +57,7 @@ return (
                         <div className="col-md-8">
                         <div className="card-body">
                             <h4 className="card-title">{data.title}</h4>
-                            <h5 className="card-text">Precio: {data.precio}</h5>
+                            <h5 className="card-text">Precio: ${data.precio}</h5>
                             <h5 className="card-text">Categoría: {data.category}</h5>
                             <ul>
                                 <li>Roast Profile: {data.roastProfile}</li>

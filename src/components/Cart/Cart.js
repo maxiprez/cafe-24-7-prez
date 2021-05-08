@@ -4,52 +4,52 @@ import { CartContext } from '../../context/CartContext';
 import './Cart.css'
 
 
-export default function Cart({ itemSale, onRemove }) {
+export default function Cart({ itemSale }) {
 
-const { updateToCart } = useContext(CartContext);
-console.log(itemSale.quantity);
+const { updateToCart, handleRemove } = useContext(CartContext);
+console.log(itemSale.cantidad);
 
 
-function onIncrementQuantity(){
+function onIncrementcantidad(){
     const newItem = {
         id: itemSale.id,
-        category: itemSale.category,
+        titulo: itemSale.titulo,
         precio: itemSale.precio,
-        quantity: itemSale.quantity + 1
+        cantidad: itemSale.cantidad + 1
    }
    console.log(newItem);
    updateToCart(newItem);
 }
 
-function onDecrementQuantity(){
-    const newItem = { id: itemSale.id,
-    category: itemSale.category,
-    precio: itemSale.precio,
-    quantity: itemSale.quantity -1 
+function onDecrementcantidad(){
+    const newItem = {
+         id: itemSale.id,
+         titulo: itemSale.titulo,
+         precio: itemSale.precio,
+         cantidad: itemSale.cantidad - 1 
  }
   console.log(newItem);
   updateToCart(newItem);
 }
 
-let subTotal = (itemSale.precio*itemSale.quantity);
+let subTotal = (itemSale.precio*itemSale.cantidad);
 
     return (
       <>
       <tr>
-            <th scope="row">{itemSale.id}</th>
-            <td>{itemSale.title}</td>
+            <th scope="row">{itemSale.titulo}</th>
             <td className="container-plus-minus row">
                 {
-                 itemSale.quantity > 1 ? <button onClick={onDecrementQuantity}  className="btn btn-danger btn-xs mr-2"><FaMinus /></button> : <button className="btn btn-danger btn-xs mr-2" disabled><FaMinus /></button>
+                 itemSale.cantidad > 1 ? <button onClick={onDecrementcantidad}  className="btn btn-danger btn-xs mr-2"><FaMinus /></button> : <button className="btn btn-danger btn-xs mr-2" disabled><FaMinus /></button>
                 }
-                <span className="text-center">{itemSale.quantity}</span>
+                <span className="text-center">{itemSale.cantidad}</span>
                 {
-                 itemSale.quantity < 5 ? <button onClick={onIncrementQuantity}  className="btn btn-success btn-xs ml-2"><FaPlus /></button> : <button className="btn btn-success btn-xs ml-2" disabled><FaPlus /></button>
+                 itemSale.cantidad < 5 ? <button onClick={onIncrementcantidad}  className="btn btn-success btn-xs ml-2"><FaPlus /></button> : <button className="btn btn-success btn-xs ml-2" disabled><FaPlus /></button>
                 }
             </td>
             <td>
                 
-                <button onClick={() => onRemove(itemSale.id)} className="action-button-del">
+                <button onClick={() => handleRemove(itemSale.id)} className="action-button-del">
                 <i><FaTrashAlt /></i> 
                 </button>
             </td>
