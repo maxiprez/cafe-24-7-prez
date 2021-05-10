@@ -35,7 +35,6 @@ function productSelected (){
     };
     console.log(newItem);
     addToCart(newItem);
-
 }
 
 
@@ -71,7 +70,7 @@ return (
                        
                     </div>
                     <div className="counter-container">
-                        <ItemCount  finalizarCompra = {finishButton} />
+                        <ItemCount  finalizarCompra = {finishButton} cantidadCompra ={quantityBuy}/>
                       
                         <button hidden = {!show.hidden} onClick={() => history.push('/cart')} className="btn btn-danger btn-terminar-compra text-center mt-4">Terminar compra</button> 
                    </div>

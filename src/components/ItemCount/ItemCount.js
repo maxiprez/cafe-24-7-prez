@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import './ItemCount.css';
+//import { CartContext } from '../../context/CartContext';
+var stock = 5;
+
+export default function ItemCount({ finalizarCompra }){
 
 
-
-export default function ItemCount({finalizarCompra}){
 
 const [number, setNumber] = useState(1);
-var stock = 5;
+
 
 function onIncrement (){
     setNumber(number + 1);
