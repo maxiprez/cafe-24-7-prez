@@ -1,3 +1,4 @@
+
 const URL_PRODUCTOS = ('https://my-json-server.typicode.com/maxiprez/cafe-24-7-prez/products');
 
 
@@ -23,8 +24,8 @@ function getItemsDetails (postId){
 
 
 
-module.exports = {
-getItems,
-getItemsDetails,
+ module.exports = {
+ getItems,
+ getItemsDetails,
 
-}
+ }
