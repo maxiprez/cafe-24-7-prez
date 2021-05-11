@@ -69,12 +69,13 @@ ul li{
 }
 
 .btn-terminar-compra{
-  border: solid 1px #b41b16;
+     border: solid 1px #b41b16;
      color: #b41b16;
      background-color: rgba(255, 255, 255, 0);
      text-transform: uppercase;
      font-weight: 900;
      font-family: 'Nunito Sans', sans-serif;
+     width: 32vh;
 }
 
 .btn-terminar-compra:hover{
@@ -95,4 +96,5 @@ ul li{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
  }

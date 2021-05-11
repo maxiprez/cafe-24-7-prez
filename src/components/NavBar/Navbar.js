@@ -31,9 +31,9 @@ function Navbar() {
       </a>
       <div className="dropdown-menu text-center">
         <Link to={'/products'} className="link-text"><a className="dropdown-item nav-link" href="#">Todos</a></Link>  
-        <Link to={'/products/Suave'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Suave</a></Link>  
-        <Link to={'/products/Medio'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Medio</a></Link>
-        <Link to={'/products/Intenso'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Intenso</a></Link>
+        <Link to={'/products/1'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Suave</a></Link>  
+        <Link to={'/products/2'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Medio</a></Link>
+        <Link to={'/products/3'} className="link-text"><a className="dropdown-item nav-link" href="#">Café Intenso</a></Link>
       </div>
     </li>
       

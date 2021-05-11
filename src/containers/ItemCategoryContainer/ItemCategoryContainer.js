@@ -17,7 +17,7 @@ useEffect(() => {
      getItems(categoryId)
      .then(res => setDataJSON(
         res.filter(function(item){
-            return item.category === categoryId;
+            return item.categoryId === categoryId;
         })
         ))
 

@@ -17,7 +17,7 @@ const { getItemsDetails } = require('../../services/PostService');
      
       getItemsDetails(itemId)
       .then(res => setDataJSON(res))
-    //console.log(itemId)
+    console.log(itemId)
       
     }, [itemId]);
     
