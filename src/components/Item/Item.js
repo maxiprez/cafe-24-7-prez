@@ -14,7 +14,7 @@ const history = useHistory();
                         <img src={data.pictureUrl} className="card-img-top mt-4" alt={data.category}/>
                         <div className="card-body">
                             <h5 className="card-title">{data.title}</h5>
-                            <p className="card-text">{data.description}</p>
+                            <p className="card-text card-text-description">{data.description}</p>
                             <h6>${data.precio}</h6>
                         </div>
                         <div>

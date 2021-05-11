@@ -9,21 +9,23 @@ export default function ItemDetail({data}) {
   const history = useHistory();
   const { addToCart } = useContext(CartContext);
 
-  
+
  const [show, setShow] = useState (true);
 
  let quantityBuy;
 
  function finishButton (quantity){
+   
+    setShow({
+        hidden: true
+    });
+   
+   quantityBuy = quantity;
+   console.log('El valor del ItemCount es: ', quantityBuy);
+   
+   productSelected();
 
- setShow({
-     hidden: true
- });
-
-quantityBuy = quantity;
-console.log('El valor del ItemCount es: ', quantityBuy);
-
-productSelected();
+ 
 }
 
 function productSelected (){
@@ -31,11 +33,13 @@ function productSelected (){
         id: data.id,
         titulo: data.title,
         precio: data.precio,
+        stock: data.stock,
         cantidad: quantityBuy
     };
     console.log(newItem);
     addToCart(newItem);
 }
+
 
 
 return (
@@ -63,6 +67,7 @@ return (
                                 <li>Intensidad: {data.tastingNotes}</li>
                                 <li>Origen: {data.origin}</li>
                             </ul>
+                            <p className="card-text"><small className="text-muted">Stock actual: {data.stock}</small></p>
                             <p className="card-text"><small className="text-muted">Impacto Social: {data.socialImpact}</small></p>
                         </div>
                             
@@ -70,7 +75,7 @@ return (
                        
                     </div>
                     <div className="counter-container">
-                        <ItemCount  finalizarCompra = {finishButton} cantidadCompra ={quantityBuy}/>
+                        <ItemCount  finalizarCompra = {finishButton} stock = {data.stock} />
                       
                         <button hidden = {!show.hidden} onClick={() => history.push('/cart')} className="btn btn-danger btn-terminar-compra text-center mt-4">Terminar compra</button> 
                    </div>

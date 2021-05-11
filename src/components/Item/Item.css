@@ -7,6 +7,10 @@
     border: solid #494646 2px;
 }
 
+.card-text-description{
+    font-size: 1rem !important;
+}
+
 .card-img-top{
     width: 100px!important;
     height: 200px!important;

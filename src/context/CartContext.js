@@ -7,44 +7,51 @@ export default function AppContextProvider({ children }) {
  const [cart, setCart] = useState ([]);
  const [totalPrice, setTotalPrice] = useState(0);
  const [totalItems, setTotalItems] = useState(0);
+ const [stockedItems, setStockedItems] = useState(5);
 
 function isInCart (id){
     return cart.some(item => item.id === id)
 }
 
-function addToCart({id, titulo, precio, cantidad}){
+function addToCart({id, titulo, precio, cantidad, stock}){
  const isCurrentInCart = isInCart(id)
     if(isCurrentInCart){
         const newCart = cart.map(item => {
             if (item.id === id){
                 return {
                     ...item,
-                    cantidad: cantidad + item.cantidad
+                    cantidad: cantidad + item.cantidad,
+                    precio: precio
                 }
             }
             return item
         })
         return setCart([...newCart])
     }
-    setCart([...cart, {id, titulo, precio, cantidad}])
+    setCart([...cart, {id, titulo, precio, cantidad, stock}])
 }
 
- function updateToCart({id, titulo, precio, cantidad}){
+ function updateToCart({id, titulo, precio, cantidad, stock}){
      const isCurrentInCart = isInCart(id)
+     
         if(isCurrentInCart){
             const newCart = cart.map(item => {
                 if (item.id === id){
+                    
                     return {
                         ...item,
-                        cantidad: cantidad 
+                        cantidad: cantidad,
+                        precio: precio
                     }
                 }
                 return item
             })
             return setCart([...newCart])
         }
-        setCart([...cart, {id, titulo, precio, cantidad}])
+        setCart([...cart, {id, titulo, precio, cantidad, stock}])
     }
+
+    
 
 useEffect(()=>{
 const Total = () =>{

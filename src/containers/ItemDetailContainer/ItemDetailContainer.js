@@ -11,14 +11,12 @@ const { getItemsDetails } = require('../../services/PostService');
  function ItemDetailContainer() {
     const history = useHistory();
     const { itemId } = useParams();
-    const [dataJSON, setDataJSON] = useState({id: "", title: "", precio: "", category:"", roastProfile: "", tastingNotes: "", pictureUrl: "", origin: "", socialImpact: ""});
+    const [dataJSON, setDataJSON] = useState({id: "", title: "", precio: "", category:"", roastProfile: "", tastingNotes: "", pictureUrl: "", origin: "", socialImpact: "", stock:""});
         
     useEffect(()=>{
-     
       getItemsDetails(itemId)
       .then(res => setDataJSON(res))
-    //console.log(itemId)
-      
+      console.log(itemId)
     }, [itemId]);
     
     

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import './ItemCount.css';
 //import { CartContext } from '../../context/CartContext';
-var stock = 5;
 
-export default function ItemCount({ finalizarCompra }){
+
+export default function ItemCount({ finalizarCompra, stock }){
 
 
 
@@ -12,11 +12,16 @@ const [number, setNumber] = useState(1);
 
 
 function onIncrement (){
-    setNumber(number + 1);
-}
+    if (number <= stock){
+        setNumber(number + 1);
+    }
+};
 
 function onDecrement ()  {
-    setNumber(number < 1 ? 0 : number - 1);
+   
+        setNumber(number <= 1 ? 1 : number - 1);
+  
+    
 }
 
 function addtoCart() {

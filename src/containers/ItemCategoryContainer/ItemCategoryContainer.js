@@ -20,8 +20,6 @@ useEffect(() => {
             return item.category === categoryId;
         })
         ))
-
-     
      console.log(categoryId);
   }, [categoryId])
 

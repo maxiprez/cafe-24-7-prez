@@ -8,6 +8,7 @@ export default function CartList() {
     console.log(cart);
     
     
+    
 
     if (cart.length === 0 ) return <h1 className="text-center">Tu carrito está vacío</h1>
 
@@ -25,7 +26,7 @@ export default function CartList() {
                 </thead>
                 <tbody>
                     {cart.map(item => (
-                        <Cart key={item.id} itemSale={item} />
+                        <Cart key={item.id} itemSale={item} stock={item.stock} />
                         
                     ))}
                 </tbody>

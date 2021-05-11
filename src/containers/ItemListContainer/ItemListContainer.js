@@ -12,7 +12,7 @@ function ItemListContainer() {
 
     useEffect (()=>{
         getItems()
-        .then(res => setDataJSON(res))
+        .then(res => setDataJSON(res) )
        
 }, []);
 
