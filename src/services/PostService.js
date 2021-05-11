@@ -1,15 +1,12 @@
+import db from '../firebase';
 
-const URL_PRODUCTOS = ('https://my-json-server.typicode.com/maxiprez/cafe-24-7-prez/products');
+const itemCollection = db.collection('products');
 
-
-function getItems (){
-    return new Promise ((resolve, reject)=>{
-        fetch(URL_PRODUCTOS)
-        .then(res => res.json())
-        .then(data => resolve(data))
-        .catch(err => reject(err))
-
-    });
+export function getItems (){
+   return itemCollection.get()
+    .then(snapshot => {
+        return snapshot.docs.map(doc => doc.data())
+    })
 }
 
 
@@ -24,8 +21,8 @@ function getItemsDetails (postId){
 
 
 
-module.exports = {
-getItems,
-getItemsDetails,
+// module.exports = {
+// getItems,
+// getItemsDetails,
 
-}
+// }
