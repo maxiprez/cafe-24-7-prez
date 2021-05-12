@@ -9,8 +9,6 @@ export function getItems (){
     })
 }
 
-
-
 export function getItemsDetails (id){
     const itemById = itemCollection.where('id', '===', `${id}`)
     return itemById.get ()
