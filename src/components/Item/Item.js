@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 
 
-export default function Item ({data}){
+export default function Item ({ data }){
 const history = useHistory();
 
     return(
@@ -18,7 +18,7 @@ const history = useHistory();
                             <h6>${data.precio}</h6>
                         </div>
                         <div>
-                            <a href="#" className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>
+                            <a href="#" type="button" onClick={() => history.push(`/cart`)} className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>
                             <a type="button" onClick={() => history.push(`/item/${data.id}`)} className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
                         
                         </div>

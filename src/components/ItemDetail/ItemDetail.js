@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import Item from '../Item/Item';
 import './ItemDetail.css';
 import CardTutorial from '../CardTutorial/CardTutorial'
 import { useHistory } from 'react-router-dom';
@@ -23,10 +24,10 @@ export default function ItemDetail({data}) {
    quantityBuy = quantity;
    console.log('El valor del ItemCount es: ', quantityBuy);
    
-   productSelected();
-
- 
+   productSelected(); 
 }
+
+
 
 function productSelected (){
     const newItem = {
