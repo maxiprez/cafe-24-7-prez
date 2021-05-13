@@ -17,27 +17,14 @@ useEffect(() => {
      getItems(categoryId)
      .then(res => setDataJSON(
         res.filter(function(item){
-            return item.categoryId === categoryId;
+            return item.category === categoryId;
         })
         ))
-
-     
-     console.log(categoryId);
-  }, [categoryId])
+            console.log(categoryId);
+        }, [categoryId])
 
 
-    //   useEffect(()=>{
-    //       getItems()
-    //      .then(res =>
-    //         setDataJSON(
-    //          res.filter(function(item){
-    //        return item.category === categoryId;
-    //      })
-    //     ))
-    //  console.log(categoryId)
-    //  }, [categoryId])
-
-
+   
     return (
         <div className="item-category-container">
             <ItemList dataJsonInput = {dataJSON}/>

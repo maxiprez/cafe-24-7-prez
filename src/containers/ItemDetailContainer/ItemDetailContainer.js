@@ -16,12 +16,12 @@ const { getItemsDetails } = require('../../services/PostService');
     useEffect(()=>{
      
       getItemsDetails(itemId)
-      .then(res => setDataJSON(res))
+      .then(res => setDataJSON(res));
     console.log(itemId)
       
     }, [itemId]);
     
-    
+    console.log(dataJSON);
     return (
         <div className="item-detail-container">
             <div>
