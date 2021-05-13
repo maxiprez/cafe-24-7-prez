@@ -1,8 +1,12 @@
 .item-list-container{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-list-container__title{
-    margin-top: 7rem;
+    margin-top: 5rem;
     font-family: 'Halant', serif;
 }

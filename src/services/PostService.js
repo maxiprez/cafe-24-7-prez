@@ -16,13 +16,18 @@ export function getItems (){
 }
 
 export function getItemsDetails (productId){
-    const itemById = itemCollection.where("id", "==", productId);
-    return itemById.get()
+  
+    return itemCollection.get(productId)
      .then(snapshot => {
-         return snapshot.docs.map(doc => doc.data)
+         return snapshot.docs.map(doc => {
+             let item = doc.data()
+             return {
+                 id: doc.id,
+                 ...item
+             }
+         })
      })
-   
-}
+ }
 
 
 
