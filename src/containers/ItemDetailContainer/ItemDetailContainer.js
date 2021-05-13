@@ -19,7 +19,7 @@ const { getItemsDetails } = require('../../services/PostService');
       console.log(itemId)
     }, [itemId]);
     
-    
+    console.log(dataJSON);
     return (
         <div className="item-detail-container">
             <div>
