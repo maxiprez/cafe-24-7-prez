@@ -5,7 +5,7 @@ import CardTutorial from '../CardTutorial/CardTutorial'
 import { useHistory } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 
-export default function ItemDetail({data}) {
+export default function ItemDetail({ data }) {
   const history = useHistory();
   const { addToCart } = useContext(CartContext);
 
@@ -41,11 +41,11 @@ function productSelected (){
 return (
          
 
-    <div className="container-cards">       
+    <div className="container-cards"  >       
         <CardTutorial/>
 
         
-          <div className="container-fluid">
+          <div className="container-fluid" id={data.id}>
             
                 <div className="card card-modal mb-3 ml-auto col-6" style={{maxWidth: "540px"}}>
 

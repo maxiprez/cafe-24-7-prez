@@ -2,32 +2,51 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
-import Loading from '../../components/Loading/Loading';
+//import Loading from '../../components/Loading/Loading';
+import db from '../../firebase';
 
 
-
-const { getItemsDetails } = require('../../services/PostService');
+//const { getItemsDetails } = require('../../services/PostService');
 
  function ItemDetailContainer() {
     const history = useHistory();
     const { itemId } = useParams();
-    const [dataJSON, setDataJSON] = useState({id: "", title: "", precio: "", category:"", roastProfile: "", tastingNotes: "", pictureUrl: "", origin: "", socialImpact: ""});
-    const [loading, setLoading] = useState(false);
+    const [dataJSON, setDataJSON] = useState({});
+   // const [loading, setLoading] = useState(false);
 
-    useEffect(()=>{
-     
-      getItemsDetails(itemId)
-      .then(res => setDataJSON(res));
-      const timer = setTimeout(()=>{
-        setLoading(true);
-      }, 1000);
-      return () => clearTimeout(timer);
-   
-    
+
+
+
+
+   const getItemsDetails = (productId) => {
+      
+      db.collection('products')
+        .doc(productId)
+        .get()
+        .then((snapshot) => {
+          setDataJSON(snapshot.data());
+        });
+    };
+  
+    useEffect(() => {
+      getItemsDetails(itemId);
     }, [itemId]);
 
+    console.log(dataJSON);
+
+    // useEffect(()=>{
+    //   getItemsDetails(itemId)
+    //   .then(res => setDataJSON(res))
+    //   const timer = setTimeout(()=>{
+    //     setLoading(true);
+    //   }, 1000);
+    //   return () => clearTimeout(timer);
+   
+    
+    // }, [itemId]);
+
      
-     console.log(dataJSON);
+    //  
     return (
         <div className="item-detail-container">
             <div>
@@ -36,7 +55,7 @@ const { getItemsDetails } = require('../../services/PostService');
             </div>
             
            <div>
-           { loading ?  <ItemDetail  data={ dataJSON } /> : <Loading /> }
+          <ItemDetail  data={ dataJSON } />
            </div>
            <div>
              <a type="button" onClick={() => history.push(`/products`)} className="btn-detalle btn btn-primary mb-4 ml-2">Volver</a>
