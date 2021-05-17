@@ -1,11 +1,23 @@
 i{
- color: rgb(0, 0, 0);
- font-size: 2em;
- line-height: 1px;
-
-
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    line-height: 1px;
+    position: relative;
 }
 
 .total-items-cart{
-   
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    background-color: rgb(250, 54, 54);
+    color: white; 
+    font-size: 0.9rem;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem; 
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem; 
+    z-index: 1;
 }

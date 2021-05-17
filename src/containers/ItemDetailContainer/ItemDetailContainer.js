@@ -12,7 +12,7 @@ import db from '../../firebase';
     const history = useHistory();
     const { itemId } = useParams();
     const [dataJSON, setDataJSON] = useState({});
-   // const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
 
 
 
@@ -30,23 +30,11 @@ import db from '../../firebase';
   
     useEffect(() => {
       getItemsDetails(itemId);
+         
     }, [itemId]);
 
     console.log(dataJSON);
 
-    // useEffect(()=>{
-    //   getItemsDetails(itemId)
-    //   .then(res => setDataJSON(res))
-    //   const timer = setTimeout(()=>{
-    //     setLoading(true);
-    //   }, 1000);
-    //   return () => clearTimeout(timer);
-   
-    
-    // }, [itemId]);
-
-     
-    //  
     return (
         <div className="item-detail-container">
             <div>

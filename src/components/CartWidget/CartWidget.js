@@ -12,7 +12,7 @@ return(
 
 <Link className="navbar-brand mr-4 navbar-brand__cart align-middle ml-auto mr-3 order-lg-last"  to={'/cart'}>
   <i><AiOutlineShoppingCart /></i> 
-  {/* <span className="total-items-cart">{totalItems}</span>  */}
+ <span className="total-items-cart">{totalItems}</span>
 </Link>
     );
   }
