@@ -3,7 +3,7 @@ import db from '../firebase';
 import 'firebase/firestore';
 
 const itemCollection = db.collection('products');
-const orderColeection = db.collection('orders');
+const orderCollection = db.collection('orders');
 
 export function getItems (){
    return itemCollection
@@ -21,7 +21,7 @@ export function getItems (){
 
 export function newOrder (buyer, items, total){
 
-return orderColeection
+return orderCollection
 .add({
     buyer: buyer,
     items: items, 

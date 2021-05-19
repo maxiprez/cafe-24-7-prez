@@ -3,6 +3,7 @@ import './CartPageContainer.css'
 import { useHistory } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import CartList from '../../components/CartList/CartList';
+//import OrderPage from '../../components/OrderPage/OrderPage';
 
 
 export default function CartPageContainer() {
@@ -23,6 +24,7 @@ export default function CartPageContainer() {
             
             
             <button className="btn btn-primary btn-lg btn-back-to-products" onClick={() => history.push('/products')}>Volver a tienda</button>
+           {cart.length === 0 ? <button className="btn btn-primary btn-lg btn-back-to-products" onClick={() => history.push('/checkout')} hidden>Terminar Compra</button> : <button className="btn btn-primary btn-lg btn-back-to-products ml-4" onClick={() => history.push('/checkout')} >Terminar Compra</button> }
         </div>
     )
 }

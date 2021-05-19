@@ -7,6 +7,7 @@ import ItemCategoryContainer from '../../containers/ItemCategoryContainer/ItemCa
 import ItemDetailContainer from '../../containers/ItemDetailContainer/ItemDetailContainer';
 import CartPageContainer from '../../containers/CartPageContainer/CartPageContainer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import OrderPage from '../../components/OrderPage/OrderPage';
 
 
 
@@ -36,6 +37,10 @@ export default function AppRouter() {
                       
                 <Route path ="/cart" >
                   <CartPageContainer />
+                </Route>
+
+                <Route path="/checkout">
+                  <OrderPage />
                 </Route>
 
 

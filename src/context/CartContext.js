@@ -83,7 +83,6 @@ function clearCart(){
                 handleRemove,
                 totalPrice,
                 totalItems,
-
             }
         }>
             {children}
