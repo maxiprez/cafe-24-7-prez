@@ -13,6 +13,7 @@ export default function OrderPage() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState(0);
     const [orderId, setOrderId] = useState('');
+    const [checkbox, setCheckbox] = useState(false);
 
 
     function addNewOrder (event){
@@ -33,29 +34,35 @@ export default function OrderPage() {
 
     return (
         <>
-          <form clasName="was-validated">
+          <form className="was-validated">
           
-            <div class="col-6 mb-3">
+            <div className="col-6 mb-3">
                 <label for="validationName">Nombres Y Apellido</label>
-                <input onChange={event => setName(event.target.value)} type="text" class="form-control" id="validationName" placeholder="Ingrese su nombre completo y apellido" required/>
+                <input onChange={event => setName(event.target.value)} type="text" className="form-control" id="validationName" placeholder="Ingrese su nombre completo y apellido" required/>
             </div>
                
-            <div class="col-6 mb-3">
+            <div className="col-6 mb-3">
                 <label for="validationEmail">Email</label>
-                <input onChange={event => setEmail(event.target.value)} type="email" class="form-control" id="validationEmail" placeholder="Ingrese su E-mail" required/>
+                <input onChange={event => setEmail(event.target.value)} type="email" className="form-control" id="validationEmail" placeholder="Ingrese su E-mail" required/>
             </div>
 
-            <div class="col-6 mb-3">
+            <div className="col-6 mb-3">
                 <label for="validationPhone">Teléfono</label>
-                <input onChange={event => setPhone(event.target.value)} type="tel" class="form-control" id="validationPhone" placeholder="Ingrese su número de teléfono con código de área sin el 0 y el celular sin el 15" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required/>
+                <input onChange={event => setPhone(event.target.value)} type="tel" className="form-control" id="validationPhone" placeholder="Ingrese su número de teléfono con código de área sin el 0 y el celular sin el 15" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required/>
             </div>
 
-            <div className="custom-control custom-checkbox mb-3">
-                <input type="checkbox" className="custom-control-input" id="customControlValidation1" required/>
+            {/* <div className="custom-control custom-checkbox mb-3">
+                <input type="checkbox" className="custom-control-input" id="checkboxValidation" required/>
+                <label className="custom-control-label" for="checkboxValidation">Acepto los términos y condiciones</label>
+            </div>  */}
+              <div className="custom-control custom-checkbox mb-3">
+                <input onChange={event => setCheckbox(event.target.true)} type="checkbox" className="custom-control-input" id="customControlValidation1" required />
                 <label className="custom-control-label" for="customControlValidation1">Acepto los términos y condiciones</label>
+                <div className="invalid-feedback">*Tienes que aceptar los términos y condiciones.</div>
             </div>
+         
            
-           { !name || !phone || !email ? <button className="btn btn-primary" type="button" disabled>Confirmar Compra</button> : <button className="btn btn-primary" type="button" data-toggle="modal" data-target="#modal" onClick={addNewOrder}>Confirmar Compra</button>}
+           { !name || !phone || !email || checkbox === false ? <button className="btn btn-primary mt-2" type="button" disabled>Confirmar Compra</button> : <button className="btn btn-primary" type="button" data-toggle="modal" data-target="#modal" onClick={addNewOrder}>Confirmar Compra</button>}
             </form>
 
             <div className="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

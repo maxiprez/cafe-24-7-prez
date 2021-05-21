@@ -16,15 +16,18 @@ export default function CartPageContainer() {
      }
    
     return (
-        <div className="text-center cart-page-container__title">
-            {/* <h1 className="cart-page-container__title">Carrito de compras</h1> */}
-            <div>
-                <CartList  onRemove={handleRemove}/>
+        <>
+            <div className="text-center cart-page-container__title">
+                {/* <h1 className="cart-page-container__title">Carrito de compras</h1> */}
+                <div>
+                    <CartList  onRemove={handleRemove}/>
+                </div>
+                
+                <div className="buttons-cartPageContainer">
+                    <button className="btn btn-primary btn-lg btn-back-to-products" onClick={() => history.push('/products')}>Volver a tienda</button>
+                    {cart.length === 0 ? <button className="btn btn-primary btn-lg btn-back-to-products" onClick={() => history.push('/checkout')} hidden>Terminar Compra</button> : <button className="btn btn-primary btn-lg btn-back-to-products ml-4" onClick={() => history.push('/checkout')} >Terminar Compra</button> }
+                </div>
             </div>
-            
-            
-            <button className="btn btn-primary btn-lg btn-back-to-products" onClick={() => history.push('/products')}>Volver a tienda</button>
-           {cart.length === 0 ? <button className="btn btn-primary btn-lg btn-back-to-products" onClick={() => history.push('/checkout')} hidden>Terminar Compra</button> : <button className="btn btn-primary btn-lg btn-back-to-products ml-4" onClick={() => history.push('/checkout')} >Terminar Compra</button> }
-        </div>
+        </>
     )
 }

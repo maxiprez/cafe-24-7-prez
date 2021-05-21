@@ -1,6 +1,5 @@
-.card-group{
-   display: flex;
-   justify-content: center !important;
-   margin-bottom: 50px !important;
-  
+.item-list{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }

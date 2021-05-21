@@ -12,7 +12,7 @@ export default function CartList() {
     if (cart.length === 0 ) return <h1 className="text-center">Tu carrito está vacío</h1>
 
     return (
-        <div>
+        <>
           
             <table className="table table-hover">
                 <thead className="thead-dark">
@@ -47,6 +47,6 @@ export default function CartList() {
             </table>
             
       
-        </div>
+       </>
     )
 }

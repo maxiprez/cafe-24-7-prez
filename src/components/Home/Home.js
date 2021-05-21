@@ -7,7 +7,7 @@ import './Home.css';
  function showHome(props){
 
 return(
-  <div>
+  <>
         <header className='parallax hero-box'>
            <div className="left-side">
               <h1>{props.titulo}</h1>
@@ -18,7 +18,7 @@ return(
         <div>
           <CardsHomeContainer />
         </div>
-  </div>
+  </>
 
     
 )

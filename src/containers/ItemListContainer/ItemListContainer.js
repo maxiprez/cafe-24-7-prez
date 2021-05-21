@@ -20,10 +20,12 @@ const [loading, setLoading] = useState(false);
 }, []);
 
     return (
-        <div className="item-list-container">
-             <h1 className="text-center item-list-container__title">Nuestra selección exclusiva de cafés</h1> 
-           { loading ? <ItemList dataJsonInput = {dataJSON} /> : <Loading />}
-        </div>
+        <>
+            <h1 className="text-center item-list-container__title">Nuestra selección exclusiva de cafés</h1> 
+            <div className="item-list-container d-flex justify-content-center">  
+            { loading ? <ItemList dataJsonInput = {dataJSON} /> : <Loading />}
+            </div>
+        </>
     )
 }
 

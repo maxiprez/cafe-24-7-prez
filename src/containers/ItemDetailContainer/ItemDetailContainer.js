@@ -36,19 +36,23 @@ import db from '../../firebase';
     console.log(dataJSON);
 
     return (
-        <div className="item-detail-container">
-            <div>
-                <h3 className="text-center item-detail-container__title2">Deleitate en nuestro</h3>
-                <h1 className="text-center item-detail-container__title1">E-shop</h1>
-            </div>
-            
-           <div>
-          <ItemDetail  data={ dataJSON } />
-           </div>
-           <div>
-             <a type="button" onClick={() => history.push(`/products`)} className="btn-detalle btn btn-primary mb-4 ml-2">Volver</a>
-           </div>
+      <>
+        <div>
+                    <h3 className="text-center item-detail-container__title2">Deleitate en nuestro</h3>
+                    <h1 className="text-center item-detail-container__title1">E-shop</h1>
         </div>
+             <div className="item-detail-container">
+              
+                
+              <div>
+                <ItemDetail  data={ dataJSON } />
+              </div>
+              
+               </div>
+               <div className="col text-center mt-4">
+                 <button type="button" onClick={() => history.push(`/products`)} className="btn-detalle btn-detalle-volver btn btn-primary mb-4 ml-2" >Volver</button>
+              </div>
+      </>
     )
 
 }

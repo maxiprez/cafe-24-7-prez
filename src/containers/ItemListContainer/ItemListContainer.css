@@ -1,12 +1,15 @@
-.item-list-container{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .item-list-container__title{
-    margin-top: 5rem;
+    margin-top: 8rem;
     font-family: 'Halant', serif;
 }
+
+/* @media (max-width: 600px) {
+    .item-list-container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  } */

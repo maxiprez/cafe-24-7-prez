@@ -47,7 +47,7 @@ return (
         
           <div className="container-fluid" id={data.id}>
             
-                <div className="card card-modal mb-3 ml-auto col-6" style={{maxWidth: "540px"}}>
+                <div className="card card-modal mb-3" style={{maxWidth: "540px"}}>
 
                     <div className="row no-gutters">
                         <div className="col-md-4">
@@ -58,12 +58,12 @@ return (
                             <h4 className="card-title">{data.title}</h4>
                             <h5 className="card-text">Precio: ${data.precio}</h5>
                             <h5 className="card-text">Categoría: {data.category}</h5>
-                            <ul>
+                            <ul className="card-text-list">
                                 <li>Roast Profile: {data.roastProfile}</li>
                                 <li>Intensidad: {data.tastingNotes}</li>
                                 <li>Origen: {data.origin}</li>
                             </ul>
-                            <p className="card-text"><small className="text-muted">Impacto Social: {data.socialImpact}</small></p>
+                            <p className="card-text card-text-small"><small className="text-muted">Impacto Social: {data.socialImpact}</small></p>
                         </div>
                             
                         </div>

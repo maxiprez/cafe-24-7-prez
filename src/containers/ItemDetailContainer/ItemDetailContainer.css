@@ -1,9 +1,9 @@
-.item-detail-container{
+/* .item-detail-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 .item-detail-container__title1{
@@ -18,3 +18,8 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+/* .btn-detalle-volver-container{
+    width: 5rem;
+    display: flex !important;
+    justify-content: center !important ;
+} */

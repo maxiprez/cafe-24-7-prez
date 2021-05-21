@@ -26,8 +26,10 @@ useEffect(() => {
 
    
     return (
-        <div className="item-category-container">
-            <ItemList dataJsonInput = {dataJSON}/>
-        </div>
+        <>     
+            <div className="item-category-container">
+                 <ItemList dataJsonInput = {dataJSON}/>
+            </div>
+        </>
     )
 }
