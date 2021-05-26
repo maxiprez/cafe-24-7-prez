@@ -11,7 +11,6 @@ export default function ItemList({dataJsonInput}){
                dataJsonInput.map((data)=>{
                     return(
                         <Item key={data.id} data={data} />
-                       
                     )
                })
            }
