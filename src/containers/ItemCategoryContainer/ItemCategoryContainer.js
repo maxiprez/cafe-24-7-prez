@@ -28,7 +28,7 @@ useEffect(() => {
     return (
         <>     
             <div className="item-category-container">
-                 <ItemList dataJsonInput = {dataJSON}/>
+                 <ItemList dataJsonInput = {dataJSON} />
             </div>
         </>
     )

@@ -12,13 +12,9 @@ import db from '../../firebase';
     const history = useHistory();
     const { itemId } = useParams();
     const [dataJSON, setDataJSON] = useState({});
-    const [loading, setLoading] = useState(false);
+   
 
-
-
-
-
-   const getItemsDetails = (productId) => {
+    const getItemsDetails = (productId) => {
       
       db.collection('products')
         .doc(productId)

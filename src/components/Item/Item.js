@@ -19,8 +19,7 @@ const history = useHistory();
                             <h6>${data.precio}</h6>
                         </div>
                         <div>
-                           <a href="#" className="btn-comprar btn btn-primary mb-4 mr-2">Comprar</a>
-                           <a type="button" onClick={() => history.push(`/item/${data.id}`)} className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</a>
+                           <button type="button" onClick={() => history.push(`/item/${data.id}`)} className="btn-detalle btn btn-primary mb-4 ml-2">Detalle</button>
                         </div>
                     </div>
                 </div>
