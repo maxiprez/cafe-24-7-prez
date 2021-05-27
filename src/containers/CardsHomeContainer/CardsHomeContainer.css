@@ -3,31 +3,40 @@
 }
 
 .card-deck{
-margin: 0 7rem 0 7rem;
+margin: 0 4rem 0 4rem;
 }
 
 .card-img-top-home{
     width: 100% !important;
-    height: 15vw !important;
+    height: 15vw !important; 
     object-fit: cover;
+ } 
+
+ @media(max-width: 600px){
+    .card-img-top-home{
+        width: 100% !important;
+        height: 50vw !important; 
+        object-fit: cover;
+     } 
  }
 
 .cards-home-container__title__h1{
     margin-top: 5rem;
     font-size: 3rem;
     text-align: center;
-    font-family: 'Halant', serif;
+    font-family: 'Bebas Neue', cursive;
 }
 
  .cards-home-container__title{
      text-transform: uppercase;
     margin-top: 0.5rem;
     text-align: center;
-    font-family: 'Halant', serif;
+    font-family: 'Bebas Neue', cursive;
  }
 
  .cards-home-container__text{
      margin-top: 2rem;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
-}
+    text-align: center;
+} 

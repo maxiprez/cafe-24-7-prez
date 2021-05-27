@@ -4,7 +4,7 @@ import './CardTutorial.css'
 export default function CardTutorial() {
     return (
         <>
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-12">
+            <div className="">
                 <div className="card border-secondary" style={{width: "400px;"}}>
                     <div className="card-body text-secondary">
                     <div className="card-header"><h5>¿Cómo comprar On-line?</h5></div>  

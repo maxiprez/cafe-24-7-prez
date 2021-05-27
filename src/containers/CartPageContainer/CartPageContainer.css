@@ -1,5 +1,5 @@
 .btn-back-to-products{
-    margin-top: 5rem;
+    margin-top: 2rem;
     border: solid 1px #494646;
     color: #494646;
     background-color: rgba(255, 255, 255, 0);
@@ -33,12 +33,16 @@
     align-items: center;
  }
 
- @media (min-width: 700px) {
-   .buttons-cartPageContainerr {
-      margin: 2rem;
+ @media (max-width: 470px) {
+   .buttons-cartPageContainer {
+  
+      font-size: 0.5rem;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-   }
+      justify-content: center !important;
+      align-items: center !important;
+      flex-direction: column !important;
+     }
  }
+
+ 
+

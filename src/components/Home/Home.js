@@ -12,7 +12,7 @@ return(
            <div className="left-side">
               <h1>{props.titulo}</h1>
                <p>{props.descripcion}</p>
-              <a href="#">Sobre Nosotros</a>
+              <button href="#">Sobre Nosotros</button>
             </div>
         </header>
         <div>

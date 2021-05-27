@@ -1,11 +1,3 @@
- .item-detail-container{
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-} 
-
-
 .item-detail-container__title1{
     font-size: 7rem;
     font-family: 'Halant', serif;
@@ -14,12 +6,7 @@
 
 .item-detail-container__title2{
     text-transform: uppercase;
-    margin-top: 7rem;
+    margin-top: 8rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-/* .btn-detalle-volver-container{
-    width: 5rem;
-    display: flex !important;
-    justify-content: center !important ;
-} */

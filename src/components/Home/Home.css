@@ -33,6 +33,51 @@ body{
             font-size: 3rem;
             line-height: 1;
         }
+
+        @media (max-width: 700px){
+            .hero-box .left-side h1{
+                font-size: 2rem;
+                line-height: 1.7;
+            }
+            .hero-box .left-side p{
+                font-size: 1.1rem !important;
+            }
+            .hero-box .left-side button{
+            font-weight: bolder;
+            margin-top: 30px;
+            border: 2px solid ;
+            background-color: #ffffff00;
+            padding: 15px 30px;
+            border-bottom-right-radius: 10px;
+            color: #ffffff;
+             display: inline-block; 
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 0.8rem !important;
+            }
+
+        }
+
+        @media (max-width: 560px){
+            
+            .hero-box .left-side button{
+            font-weight: bolder;
+            margin-top: 30px;
+            border: 2px solid ;
+            background-color: #ffffff00;
+            padding: 15px 30px;
+            border-bottom-right-radius: 10px;
+            color: #ffffff;
+             display: inline-block; 
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 0.6rem !important;
+            }
+
+        }
+        
         
      
         .hero-box .left-side p{
@@ -42,7 +87,7 @@ body{
             font-family: 'Nunito Sans', sans-serif;
         }
         
-        .hero-box .left-side a{
+        .hero-box .left-side button{
            font-weight: bolder;
             margin-top: 30px;
             border: 2px solid ;
@@ -57,7 +102,7 @@ body{
         }
         
 
-        .hero-box .left-side a:hover{
+        .hero-box .left-side button:hover{
             font-weight: bolder;
             color: black;
             background-color: #fff;

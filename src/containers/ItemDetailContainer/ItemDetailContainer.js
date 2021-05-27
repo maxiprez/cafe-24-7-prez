@@ -37,14 +37,12 @@ import db from '../../firebase';
                     <h3 className="text-center item-detail-container__title2">Deleitate en nuestro</h3>
                     <h1 className="text-center item-detail-container__title1">E-shop</h1>
         </div>
-             <div className="item-detail-container">
-              
-                
-              <div>
+                             
+              <div className="item-detail-container">
                 <ItemDetail  data={ dataJSON } />
               </div>
               
-               </div>
+              
                <div className="col text-center mt-4">
                  <button type="button" onClick={() => history.push(`/products`)} className="btn-detalle btn-detalle-volver btn btn-primary mb-4 ml-2" >Volver</button>
               </div>
