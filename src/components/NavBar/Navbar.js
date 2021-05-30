@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Navbar() {
     return (
 
@@ -16,7 +17,7 @@ function Navbar() {
    
    <Logo />
 
-    <CartWidget />
+  <CartWidget />
    
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span className="navbar-toggler-icon"></span>
@@ -38,10 +39,10 @@ function Navbar() {
     </li>
       
      
-      <li className="nav-item"><a className="nav-link" href="#">Empresa</a></li>
-      <li className="nav-item"><a className="nav-link" href="#">Nosotros</a></li>
-      <li className="nav-item"><a className="nav-link" href="#">Servicios</a></li>
-      <li className="nav-item"><a className="nav-link" href="#">Contacto</a></li>
+      <li><Link to={'/company'} className="link-text"><a className="nav-link" href="#">Empresa</a></Link></li> 
+      <li><Link to={'/us'} className="link-text"><a className="nav-link" href="#">Nosotros</a></Link></li> 
+      <li><Link to={'/services'} className="link-text"><a className="nav-link" href="#">Servicios</a></Link></li> 
+      <li><Link to={'/contact'} className="link-text"><a className="nav-link" href="#">Contacto</a></Link></li> 
     </ul>
   
   </div>

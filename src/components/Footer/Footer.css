@@ -1,11 +1,12 @@
-footer {
+ footer {
  background-color: black;
  display: flex;
  justify-content: center;
  align-items: center;
  padding-top: 20px;
- margin-top: 300px;
- 
+    left: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 
@@ -28,4 +29,4 @@ footer {
 .copyright {
   color: #f1f1f1;
   font-size: 0.9rem;
-}
+} 

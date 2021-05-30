@@ -8,7 +8,7 @@ import ItemDetailContainer from '../../containers/ItemDetailContainer/ItemDetail
 import CartPageContainer from '../../containers/CartPageContainer/CartPageContainer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import OrderPage from '../../components/OrderPage/OrderPage';
-
+import Contact from '../../components/Contact/Contact';
 
 
 export default function AppRouter() {
@@ -43,6 +43,9 @@ export default function AppRouter() {
                   <OrderPage />
                 </Route>
 
+                <Route path="/contact">
+                  <Contact />
+                </Route>
 
                 </Switch>
            <Footer />
