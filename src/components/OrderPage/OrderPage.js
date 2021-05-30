@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import './OrderPage.css';
 import { CartContext } from '../../context/CartContext';
 import { useHistory } from 'react-router-dom';
+import { MdDone } from "react-icons/md";
 
 const { newOrder } = require ('../../services/PostService');
 
@@ -48,7 +49,8 @@ export default function OrderPage() {
 
             <div className="col-6 mb-3">
                 <label for="validationPhone">Teléfono</label>
-                <input onChange={event => setPhone(event.target.value)} type="tel" className="form-control" id="validationPhone" placeholder="Ingrese su número de teléfono con código de área sin el 0 y el celular sin el 15" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required/>
+                <input onChange={event => setPhone(event.target.value)} type="tel" className="form-control" id="validationPhone" placeholder="Ingrese su número de teléfono con código de área sin el 0 y el celular sin el 15" pattern="[0-9]{3}-[0-9]{4}[0-9]{4}" required/>
+                <small className="text-muted">Formato: 011-45467890</small>
             </div>
 
             {/* <div className="custom-control custom-checkbox mb-3">
@@ -65,28 +67,29 @@ export default function OrderPage() {
            { !name || !phone || !email || checkbox === false ? <button className="btn btn-primary mt-2" type="button" disabled>Confirmar Compra</button> : <button className="btn btn-primary" type="button" data-toggle="modal" data-target="#modal" onClick={addNewOrder}>Confirmar Compra</button>}
             </form>
 
-            <div className="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Resumen de su compra</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                            <p className="text-modal-order">*Su pedido ha sido guardado*</p>
+            {/* Modal: */}
+            
+                <div id="modal" className="modal fade">
+                <div className="modal-dialog modal-confirm">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <div className="icon-box">
+                                <i className="react-icon-done"><MdDone /></i>
+                            </div>				
+                            <h4 className="modal-title w-100">Pedido generado exitosamente!</h4>	
+                        </div>
+                        <div className="modal-body">
+                        
                             <p className="text-modal-order">Código de compra: {orderId}</p>
                             <p className="text-modal-order">Total a abonar: ${totalPrice}</p>
-                            <small class="text-muted">En instantes lo estaremos contactando para confirmar su compra.</small>
-                          
-                    </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={closeAllAndReset}>Cerrar</button>
+                            <small className="text-muted">En instantes lo estaremos contactando para confirmar su compra.</small>
+                        </div>
+                        <div className="modal-footer">
+                            <button className="btn btn-success btn-block" data-dismiss="modal" type="button" onClick={closeAllAndReset}>OK</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </>
     )
 }
