@@ -1,0 +1,175 @@
+.item-detail-container__title1{
+    font-size: 7rem;
+    font-family: 'Halant', serif;
+       
+}
+
+.item-detail-container__title2{
+    text-transform: uppercase;
+    margin-top: 8rem;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.card-title-company{
+    font-family: 'Halant', serif;
+    font-size: 4rem;
+}
+
+.card-text-company{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.card-company{
+         margin-top: 5rem !important;
+         margin-bottom: 15rem !important;
+         margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        border: none;
+}
+
+.img-card-company img{
+    min-height: 100vh;
+}
+.card-company-bottom{
+    margin-top: 15rem !important;
+    margin-bottom: 10rem !important;
+    margin: 0 auto; /* Added */
+   float: none; /* Added */
+   margin-bottom: 10px; /* Added */
+   border: none;
+}
+
+
+.hero-image-company {
+    background : url('../../assets/img/granos-company.jpg') center / cover;
+    position   : relative;
+    min-height: 60vh; 
+    background-size: cover;
+    margin: 7rem 0 7rem 0;
+  }
+    
+  .hero-image-company::before {
+      content    : "";
+      background : rgb(26, 26, 26); 
+      display    : block;
+      position   : absolute;
+      width      : 100%;
+      height     : 100%;
+      opacity    : 0.7; 
+    }
+    
+    .hero-title{
+      text-align: center;
+      position: absolute;
+      top: -40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Halant', serif;
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+    
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+    
+    .footer-top{
+        margin-top: 5rem;
+        background-color: #2a2d36;
+        width: 100%;
+        height: 1rem;
+    }
+    @media (max-width: 950px){
+      .hero-title{
+        text-align: center;
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Halant', serif;
+        font-size: 2.5rem !important;
+        margin-bottom: 2rem !important;
+      }
+      .hero-text p{
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      }
+    }
+  
+    @media (max-width: 650px){
+      .hero-title{
+        text-align: center;
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Halant', serif;
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important;
+      }
+  
+      .hero-text p{
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+      }
+
+      .btn-detalle-volver-a-tienda{
+        margin-top: 0.5rem !important;
+        border: solid 1px #494646;
+        color: white;
+        background-color: #494646;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    .btn-detalle-volver-a-tienda:hover{
+        background-color: rgb(255, 255, 255,0);
+        color: white;
+        border: solid 1px #494646;
+        transition: all 0.5s ease-out;
+     }
+    
+     .btn-detalle-volver-a-tienda:focus{
+        background-color: #494646;
+        color: white;
+        border: solid 1px #494646;
+        transition: all 0.5s ease-out;
+     }
+  
+    }
+
+    .btn-detalle-volver-a-tienda{
+        margin-top: 2rem;
+        border: solid 1px #494646;
+        color: white;
+        background-color: #494646;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    .btn-detalle-volver-a-tienda:hover{
+        background-color: rgb(255, 255, 255,0);
+        color: white;
+        border: solid 1px #494646;
+        transition: all 0.5s ease-out;
+     }
+    
+     .btn-detalle-volver-a-tienda:focus{
+        background-color: #494646;
+        color: white;
+        border: solid 1px #494646;
+        transition: all 0.5s ease-out;
+     }

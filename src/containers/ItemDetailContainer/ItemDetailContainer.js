@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
-//import Loading from '../../components/Loading/Loading';
 import db from '../../firebase';
 
 
-//const { getItemsDetails } = require('../../services/PostService');
 
  function ItemDetailContainer() {
     const history = useHistory();

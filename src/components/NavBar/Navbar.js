@@ -40,7 +40,6 @@ function Navbar() {
       
      
       <li><Link to={'/company'} className="link-text"><a className="nav-link" href="#">Empresa</a></Link></li> 
-      <li><Link to={'/us'} className="link-text"><a className="nav-link" href="#">Nosotros</a></Link></li> 
       <li><Link to={'/services'} className="link-text"><a className="nav-link" href="#">Servicios</a></Link></li> 
       <li><Link to={'/contact'} className="link-text"><a className="nav-link" href="#">Contacto</a></Link></li> 
     </ul>
