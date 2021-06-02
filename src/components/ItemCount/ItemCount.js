@@ -48,9 +48,10 @@ return(
         </div> 
         <div className="btn-add-to-cart">
            {
-           number > stock ? <button className="btn btn-primary btn-agregar-carrito mt-4 text-center" hidden>Agregar al Carrito</button> :
+           number > stock  || number < 1 ? <button className="btn btn-primary btn-agregar-carrito mt-4 text-center" hidden>Agregar al Carrito</button> :
             <button className="btn btn-primary mt-4 btn-agregar-carrito text-center" onClick={addtoCart}>Agregar al Carrito</button> 
             }
+            
            
         </div>
         <div> 
