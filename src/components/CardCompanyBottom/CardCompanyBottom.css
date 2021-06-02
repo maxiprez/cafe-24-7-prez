@@ -1,0 +1,8 @@
+.card-company-bottom{
+    margin-top: 15rem !important;
+    margin-bottom: 10rem !important;
+    margin: 0 auto; /* Added */
+   float: none; /* Added */
+   margin-bottom: 10px; /* Added */
+   border: none;
+}

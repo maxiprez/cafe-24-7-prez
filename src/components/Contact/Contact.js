@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MdDone } from "react-icons/md";
 import './Contact.css';
 import { useHistory } from 'react-router-dom';
+import {  animateScroll as scroll } from "react-scroll";
 
 const { newMessage } = require('../../services/PostService');
 
@@ -33,6 +34,7 @@ export default function Contact() {
 
 	function closeAndReset(){
          history.push('/')
+		 scroll.scrollToTop(100);
     }
 
     return (

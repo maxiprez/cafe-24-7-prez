@@ -9,7 +9,7 @@ import CartPageContainer from '../../containers/CartPageContainer/CartPageContai
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import OrderPage from '../../components/OrderPage/OrderPage';
 import Contact from '../../components/Contact/Contact';
-import Company from '../../components/Company/Company';
+import CompanyContainer from '../../containers/CompanyContainer/CompanyContainer';
 
 
 export default function AppRouter() {
@@ -49,7 +49,7 @@ export default function AppRouter() {
                 </Route>
 
                 <Route path="/company">
-                  <Company />
+                  <CompanyContainer />
                 </Route>
 
                 </Switch>

@@ -4,6 +4,7 @@ import './ItemDetail.css';
 import CardTutorial from '../CardTutorial/CardTutorial'
 import { useHistory } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
+import {  animateScroll as scroll } from "react-scroll";
 
 export default function ItemDetail({ data }) {
   const history = useHistory();
@@ -37,6 +38,10 @@ function productSelected (){
     addToCart(newItem);
 }
 
+function scrollToTop(){
+    scroll.scrollToTop(100);
+    history.push('/cart');
+}
 
 return (
          
@@ -72,7 +77,7 @@ return (
                     <div className="counter-container">
                         <ItemCount  finalizarCompra = {finishButton} cantidadCompra ={quantityBuy}/>
                       
-                        <button hidden = {!show.hidden} onClick={() => history.push('/cart')} className="btn btn-danger btn-terminar-compra text-center mt-4">Terminar compra</button> 
+                        <button hidden = {!show.hidden} onClick={scrollToTop} className="btn btn-danger btn-terminar-compra text-center mt-4" >Terminar compra</button> 
                    </div>
                 </div>
             </div>

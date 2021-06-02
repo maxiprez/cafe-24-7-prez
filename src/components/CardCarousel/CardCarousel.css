@@ -1,0 +1,26 @@
+.carousel-card{
+width: 400px;
+height: 400px;
+font-size: 20px;
+margin: 0 20px;  
+display: flex;
+justify-content: center;
+align-items: center;  
+position: relative;
+margin: auto;
+overflow: hidden;
+width: 540px;
+}
+
+  .carousel-card img {
+    max-width: 100%;
+    transition: all 0.5s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+  }
+
+  .carousel-card:hover img {
+    transform: scale(1.1);
+  }

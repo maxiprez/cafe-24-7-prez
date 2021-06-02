@@ -1,0 +1,22 @@
+.card-title-company{
+    font-family: 'Halant', serif;
+    font-size: 4rem;
+}
+
+.card-text-company{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.card-company{
+         margin-top: 5rem !important;
+         margin-bottom: 15rem !important;
+         margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        border: none;
+}
+
+.img-card-company img{
+    min-height: 100vh;
+}

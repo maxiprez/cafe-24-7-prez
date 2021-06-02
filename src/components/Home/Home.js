@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../../containers/CardCarouselContainer/CardCarouselContainer';
 import CardsHomeContainer from '../../containers/CardsHomeContainer/CardsHomeContainer';
 import './Home.css';
 import AboutUs from '../AboutUs/AboutUs';
@@ -22,6 +23,7 @@ return(
         </header>
         <div>
           <CardsHomeContainer />
+          <Carousel />
           <AboutUs />
         </div>
   </>

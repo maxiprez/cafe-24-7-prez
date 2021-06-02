@@ -8,7 +8,7 @@ const { newOrder } = require ('../../services/PostService');
 
 export default function OrderPage() {
     const history = useHistory();
-    const { cart, totalPrice, clearCart } = useContext(CartContext);
+    const { cart, totalPrice, clearCart, totalItems } = useContext(CartContext);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -53,10 +53,7 @@ export default function OrderPage() {
                 <small className="text-muted">Formato: 011-45467890</small>
             </div>
 
-            {/* <div className="custom-control custom-checkbox mb-3">
-                <input type="checkbox" className="custom-control-input" id="checkboxValidation" required/>
-                <label className="custom-control-label" for="checkboxValidation">Acepto los términos y condiciones</label>
-            </div>  */}
+          
               <div className="custom-control custom-checkbox mb-3">
                 <input onChange={event => setCheckbox(event.target.true)} type="checkbox" className="custom-control-input" id="customControlValidation1" required />
                 <label className="custom-control-label" for="customControlValidation1">Acepto los términos y condiciones</label>
@@ -64,7 +61,7 @@ export default function OrderPage() {
             </div>
          
            
-           { !name || !phone || !email || checkbox === false ? <button className="btn btn-primary mt-2" type="button" disabled>Confirmar Compra</button> : <button className="btn btn-primary" type="button" data-toggle="modal" data-target="#modal" onClick={addNewOrder}>Confirmar Compra</button>}
+           { !name || !phone || !email || checkbox === false ? <button className="btn btn-primary mt-2" type="button" disabled>Realizar compra</button> : <button className="btn btn-primary" type="button" data-toggle="modal" data-target="#modal" onClick={addNewOrder}>Realizar compra</button>}
             </form>
 
             {/* Modal: */}
@@ -80,8 +77,9 @@ export default function OrderPage() {
                         </div>
                         <div className="modal-body">
                         
-                            <p className="text-modal-order">Código de compra: {orderId}</p>
-                            <p className="text-modal-order">Total a abonar: ${totalPrice}</p>
+                            <p className="text-modal-order"><b>Código de compra:</b> {orderId}</p>
+                            <p className="text-modal-order"><b>Total a abonar:</b> ${totalPrice}</p>
+                            <p className="text-modal-order"><b>Cantidad de productos:</b> {totalItems}</p>
                             <small className="text-muted">En instantes lo estaremos contactando para confirmar su compra.</small>
                         </div>
                         <div className="modal-footer">

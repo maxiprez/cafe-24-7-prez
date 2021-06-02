@@ -8,7 +8,7 @@ const { getItems } = require('../../services/PostService');
 
 function ItemListContainer() {
  const [dataJSON, setDataJSON] = useState ([]);
-const [loading, setLoading] = useState(false);
+ const [loading, setLoading] = useState(false);
 
     useEffect (()=>{
         getItems()
