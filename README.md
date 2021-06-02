@@ -27,4 +27,4 @@ npm run start
 * Github: [@maxiprez](https://github.com/maxiprez)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/maximiliano-prez\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/maximiliano-prez\/)
 
-![Alt Text](https://i.giphy.com/media/wkBAitNOIWyyn3QCtN/giphy.webp)
+![Alt Text](https://media.giphy.com/media/dfG7vkyblqNL3AE3ZK/giphy.gif)
