@@ -11,9 +11,9 @@
 .card-company{
          margin-top: 5rem !important;
          margin-bottom: 15rem !important;
-         margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
+         margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
         border: none;
 }
 

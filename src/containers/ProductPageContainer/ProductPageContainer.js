@@ -8,8 +8,8 @@ export default function ProductPageContainer() {
 
 
     return (
-        <div>
+        <>
             <ItemListContainer />
-        </div>
+        </>
     )
 }

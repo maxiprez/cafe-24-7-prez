@@ -18,11 +18,18 @@ export default function AppRouter() {
            <NavBar />
                 <Switch>
                 <Route exact path="/">
-              <Home
-                  titulo='Cosechando el mejor café para vos desde 1989'
-                  descripcion='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
-                                        />
-            </Route>
+                  <Home
+                      titulo='Cosechando el mejor café para vos desde 1989'
+                      descripcion='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
+                                            />
+                </Route>
+
+                <Route  path="/home">
+                  <Home
+                      titulo='Cosechando el mejor café para vos desde 1989'
+                      descripcion='24/7 es una empresa familiar de Argentina, que le brinda a sus cliente el mejor café nacional desde hace más de 30 años.'
+                                            />
+                </Route>
 
               <Route exact path="/products">
                   <Products />

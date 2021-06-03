@@ -45,8 +45,8 @@ function scrollToTop(){
 
 return (
          
-
-    <div className="container-cards"  >       
+<>
+    <div className="container-cards">       
         <CardTutorial/>
 
         
@@ -82,7 +82,7 @@ return (
                 </div>
             </div>
        </div>    
-
+</>
 
   )
 }

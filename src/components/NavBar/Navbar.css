@@ -28,30 +28,24 @@
        
   }
 
-  .navbar .navbar-nav .nav-link::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: #000000;
-    color: transparent;
-    width: 0%;
-    content: '';
-    height: 3px;
-    transition: all 0.5s;
+  .navbar .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid rgb(0, 0, 0); 
+  }
+
+
+ .active{
+  border-bottom: 3px solid rgb(0, 0, 0);
   }
 
 
 
   .navbar .navbar-nav .nav-link:hover::after {
     width: 100%;
-    
   }
 
 
     nav{
-       box-shadow: 0 10px 10px 0 rgba(0,0,0,.2) !important;
+       box-shadow: 0 5px 5px 0 rgba(0,0,0,.2) !important;
             }
 
     .navbar-btn{
@@ -75,16 +69,16 @@
     color: #7c7c7d;
   }
  
-  .dropdown-menu a:focus{
+  .dropdown-menu NavLink:focus{
     background-color: none !important;
      border-color: black;
-     color: #5d5b5b;
+     
    }
 
    .dropdown-item:focus{
     background-color: none !important;
     color: black !important;
-   background-color: #d1d1d1 !important;
+  text-decoration: none;
    }
 
    .dropdown-item{

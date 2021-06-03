@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { FaRegEnvelope, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 
+
 export default function Footer() {
     return (
     <> 

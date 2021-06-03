@@ -9,7 +9,6 @@ const history = useHistory();
 
     return(
         <>
-            
                 <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4" >
                     <div className="card h-100 card-item mx-auto" style={{width:"20rem"}}>
                       <img src={data.pictureUrl} className="card-img-top mt-4" alt={data.category}/>
@@ -23,12 +22,6 @@ const history = useHistory();
                         </div>
                     </div>
                 </div>
-                
         </>
-      
-
-
-           
-      
     );
 }

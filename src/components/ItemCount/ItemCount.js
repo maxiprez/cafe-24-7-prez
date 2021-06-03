@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import './ItemCount.css';
-//import { CartContext } from '../../context/CartContext';
+
 var stock = 5;
 
 export default function ItemCount({ finalizarCompra }){
