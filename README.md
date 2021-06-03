@@ -83,4 +83,4 @@ npm  install react-elastic-carousel
 
   
 
-![Alt Text](https://media.giphy.com/media/dfG7vkyblqNL3AE3ZK/giphy.gif)
+![Alt Text](https://media.giphy.com/media/9qIXrdgbkyBs6nUBHo/giphy.gif)
